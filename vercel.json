@@ -1,13 +1,15 @@
 {
-  "functions": {
-    "api/routes/q_and_a_route.js": {
-      "runtime": "nodejs@14.0.0"
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/routes/server.js",
+      "use": "@vercel/node"
     }
-  },
+  ],
   "routes": [
-    { "handle": "filesystem" },
-    { "src": "/white", "status": 308, "dest": "/indexwhite.html" },
-    { "src": "/dark", "status": 308, "dest": "/index.html" },
-    { "src": "/(.*)", "status": 404, "dest": "/404/index.html" }
+    {
+      "src": "/q&a",
+      "dest": "/api/routes/server.js"
+    }
   ]
 }
