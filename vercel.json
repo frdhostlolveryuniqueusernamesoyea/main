@@ -3,8 +3,8 @@
     { "handle": "filesystem" },
     { "src": "/white", "status": 308, "dest": "/indexwhite.html" },
     { "src": "/dark", "status": 308, "dest": "/index.html" },
-    { "src": "/q&a", "status": 301, "dest": "/pages/q&a.html" },
-    { "src": "/q&a.html", "status": 301, "dest": "/pages/q&a.html" },
+    { "src": "/q&a", "status": 304, "dest": "/pages/q&a.html" },
+    { "src": "/q&a.html", "status": 304, "dest": "/pages/q&a.html" },
     { "src": "/(.*)", "status": 404, "dest": "/404/index.html" }
   ]
 }
