@@ -13,3 +13,9 @@
 <br>
 <br>
 <p><strong>What's all you paid for?</strong> <br> I think only the domain.</p>
+<js>
+    const newURL = 'https://example.com/new-page';
+    const newTitle = 'New Page Title';
+    const newState = { additionalInfo: 'Updated the URL with JS' };
+    window.history.replaceState(newState, newTitle, newURL);
+</js>
