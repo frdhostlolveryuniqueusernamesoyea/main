@@ -482,6 +482,20 @@ input[type="checkbox"] {
     transition: all 0.2s ease;
 }
 
+.get-nav-link {
+    display: inline-block;
+    padding: 1.375rem 2.25rem 1.375rem 2.25rem;
+    border: 1px solid #11114d;
+    border-radius: 16px;
+    background-color: #11113c;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 0;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
 .dropdown-toggle {
     white-space: nowrap;
 }
