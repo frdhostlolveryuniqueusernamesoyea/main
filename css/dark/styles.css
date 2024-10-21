@@ -1253,3 +1253,8 @@ a:hover.back-to-top {
 .center {
     align-items: center;
   }
+
+/* whatis link */
+.whatis-main-link {
+    font-size: 26px;
+  }
