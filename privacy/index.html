@@ -1,9 +1,146 @@
 <!DOCTYPE html>
-<link rel="icon" type="image/x-icon" href="/favicon.webp">
-<meta name="color-scheme" content="light dark">
-<title>Privacy | FrDomains</title>
-<p>we dont save anything except orders and accounts created</p>
-<p>we use analytics with ips so we know if its not the same person</p>
-<p>if we arent doing something right email us (<a href="mailto:contact@frdomains.site">contact@frdomains.site</a>) (not right GDPR etc)</p>
-<p>(i am not a lawyer so something may not be done right please if you find something email us)</p>
-<p></p>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- SEO Meta Tags -->
+        <meta name="description" content="FrDomains is a service that offers free subdomains" />
+        <meta name="author" content="MrTomiCZ, kubali" />
+        <meta name="application-name" content="FrDomains">
+
+        <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+        <meta property="og:site_name" content="FrDomains" /> <!-- website name -->
+        <meta property="og:site" content="frdomains.site" /> <!-- website link -->
+        <meta property="og:title" content="FrDomains" /> <!-- title shown in the actual shared post -->
+        <meta property="og:description" content="FrDomains is a service that offers free subdomains &amp; free email addresses" /> <!-- description shown in the actual shared post -->
+        <meta property="og:image" content="/logo.jpg" /> <!-- image link, make sure it's jpg -->
+        <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+        <meta name="twitter:card" content="summary_large_image" /> <!-- to have large image post format in Twitter -->
+
+        <!-- Webpage Title -->
+        <title>WhatIs | FrDomains</title>
+
+        <!-- Styles -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+        <link href="/css/fontawesome-all.css" rel="stylesheet" />
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+        <link href="/css/swiper.css" rel="stylesheet" />
+        <link href="/css/magnific-popup.css" rel="stylesheet" />
+        <link href="/css/dark/styles.css" rel="stylesheet" />
+
+        <!-- Favicon  -->
+        <link rel="icon" href="/favicon.webp" />
+    </head>
+    <body data-spy="scroll" data-target=".fixed-top" class="bg-zinc-700">
+
+        <!-- Dark Mode (does not work thats why its !--'d) -->
+        <!-- meta name="color-scheme" content="light dark" -->
+        
+
+        <!-- Navigation -->
+        <nav class="navbar fixed-top">
+            <div class="container sm:px-4 lg:px-8 flex flex-wrap items-center justify-between lg:flex-nowrap">
+                
+                <!-- Text Logo - Use this if you don't have a graphic logo -->
+                <!-- <a class="text-gray-800 font-semibold text-3xl leading-4 no-underline page-scroll" href="index.html">Pavo</a> -->
+
+                <!-- Image Logo -->
+                <a class="inline-block mr-4 py-0.5 text-xl whitespace-nowrap hover:no-underline focus:no-underline" href="index.html">
+                    <img src="/favicontp.png" alt="logo" class="h-15" width="64" height="64"/>
+                </a>
+
+                <button class="background-transparent rounded text-xl leading-none hover:no-underline focus:no-underline lg:hidden lg:text-gray-400" type="button" data-toggle="offcanvas">
+                    <span class="navbar-toggler-icon inline-block w-8 h-8 align-middle"></span>
+                </button>
+
+                <div class="navbar-collapse offcanvas-collapse lg:flex lg:flex-grow lg:items-center" id="navbarsExampleDefault">
+                    <ul class="pl-0 mt-3 mb-2 ml-auto flex flex-col list-none lg:mt-0 lg:mb-0 lg:flex-row">
+                        <li>
+                            <a class="nav-link page-scroll" href="#header">Home <span class="sr-only"></span></a>
+                        </li>
+                        <li>
+                            <a class="nav-link page-scroll" href="#pricing">Pricing</a>
+                        </li>
+                        <li>
+                            <a class="nav-link page-scroll" href="#contact">Contact</a>
+                        </li>
+                        <li>
+                            <a class="nav-link page-scroll" href="#stats">Stats</a>
+                        </li>
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop&nbsp;&nbsp;↓</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="nav-link page-scroll dropdown-item" href="/team">Team</a>
+                        <div class="dropdown-divider"></div>
+                            <a class="nav-link page-scroll dropdown-item" href="/tutorials">Tutorials</a>
+                        <div class="dropdown-divider"></div>
+                            <a class="nav-link page-scroll dropdown-item active" href="/privacy">Privacy Policy</a>
+                        <div class="dropdown-divider"></div>
+                            <a class="nav-link page-scroll dropdown-item" href="/whatis">WhatIs</a>
+                        <!-- div class="dropdown-divider"></div-->
+                    </div>
+
+                        <li>
+                            <a class="nav-link page-scroll" href="/discord">Join the Discord</a>
+                        </li>
+                        &nbsp;
+                        &nbsp;
+                        <li>
+                            <a class="get-nav-link page-scroll" href="#get">Get</a>
+                        </li>
+
+                    </ul>
+                </div> <!-- end of navbar-collapse -->
+            </div> <!-- end of container -->
+        </nav> <!-- end of navbar -->
+        <!-- end of navigation -->
+
+        <!-- Header -->
+        <header id="header" class="header py-28 text-center md:pt-36 lg:text-left xl:pt-44 xl:pb-32">
+            <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8">
+                <div class="mb-16 lg:mt-32 xl:mt-40 xl:mr-12">
+                    <h1 class="h1-large mb-5">Our Privacy Policy</h1>
+                    <p class="p-large mb-8">yea, it's small, <strong><i>cuz why would it be large</i></strong></p>
+                </div>
+                <div class="xl:text-right">
+                    <img class="inline" src="/logo.jpg" alt="domain-logo" />
+                </div>
+            </div> <!-- end of container -->
+        </header> <!-- end of header -->
+        <!-- end of header -->
+        <div id="privacy" class="bg-blue-950 rounded-lg shadow-2xl">
+            <p><strong>We</strong> refers to FrDomains</p>
+            <p>We don't save anything except orders and accounts created</p>
+            <p>We don't sell your data because why would we</p>
+            <p>If we aren't doing something right email us (<a href="mailto:contact@frdomains.site">contact@frdomains.site</a>) (not right GDPR etc.)</p>
+            <p>(I am not a lawyer so something may not be done right please if you find something email us)</p>
+            <p></p>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-3">
+                <ul class="mb-4 list-unstyled p-small">
+                    <li class="mb-2"><a href="/tutorials">Tutorials</a></li>
+                    <li class="mb-2"><a href="/privacy">Privacy Policy</a></li>
+                    <li class="mb-2"><a href="/team">Team</a></li>
+                </ul>
+
+                <p class="pb-2 p-small statement">Made by <a href="https://mrtomicz.ddns.net/">MrTomiCZ</a>, kubali and <!--a href="https://jpman.eu/"-->JPmanOF<!--/a--></p>
+            </div> 
+
+        <!-- end of container -->
+        </div> <!-- end of copyright -->
+        <!-- end of copyright -->
+
+
+        <!-- Scripts -->
+        <script src="/js/jquery.min.js"></script> <!-- jQuery for JavaScript plugins -->
+        <script src="/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+        <script src="/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+        <script src="/js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+        <script src="/js/scripts.js"></script> <!-- Custom scripts -->
+    </body>
+</html>
