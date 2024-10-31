@@ -1265,9 +1265,14 @@ a:hover.back-to-top {
 
 /* CENTER */
 .center {
-    align-items: center;
     text-align: center;
     margin: auto;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
   }
 
 .centermiddle {
