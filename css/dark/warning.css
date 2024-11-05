@@ -10,4 +10,12 @@
     text-align: center;
     top: 50%;
     width: 100%;
+    display: flex;
+    align-items: center;
   }
+.warning img {
+    margin-right: 10px; /* Adjust space between the image and text */
+}
+.warning p {
+    margin: 0; /* Remove default margin from the paragraph */
+}
