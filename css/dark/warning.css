@@ -1,4 +1,11 @@
 /* warning page css */
+body {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically if needed */
+  min-height: 100vh; /* Make sure the body takes up the full viewport height */
+  margin: 0; /* Remove default body margin */
+}
 .warning {
     background-color: red;
     color: white;
@@ -11,6 +18,7 @@
     top: 50%;
     width: 100%;
     display: flex;
+    align-items: center;
   }
 .warning img {
     margin-right: 10px; /* Adjust space between the image and text */
