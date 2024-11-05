@@ -2,27 +2,26 @@
 body {
   display: flex;
   justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically if needed */
-  min-height: 100vh; /* Make sure the body takes up the full viewport height */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Full viewport height */
   margin: 0; /* Remove default body margin */
 }
+
 .warning {
-    background-color: red;
-    color: white;
-    font: 400 1rem/1.625rem "Open Sans", sans-serif;
-    left: 0;
-    line-height: 200px;
-    margin-top: -100px;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-  }
-.warning img {
-    margin-right: 10px; /* Adjust space between the image and text */
+  background-color: red;
+  color: white;
+  font: 400 1rem/1.625rem "Open Sans", sans-serif;
+  padding: 20px; /* Add padding for spacing inside the box */
+  text-align: center;
+  display: flex;
+  align-items: center; /* Align image and text vertically */
+  border-radius: 8px; /* Optional: add rounded corners */
 }
+
+.warning img {
+  margin-right: 10px; /* Space between image and text */
+}
+
 .warning p {
-    margin: 0; /* Remove default margin from the paragraph */
+  margin: 0; /* Remove default margin */
 }
