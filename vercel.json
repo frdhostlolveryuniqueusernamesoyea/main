@@ -6,5 +6,10 @@
     { "src": "/q&a", "status": 308, "dest": "/pages/q&a.html" },
     { "src": "/q&a.html", "status": 308, "dest": "/pages/q&a.html" },
     { "src": "/(.*)", "status": 404, "dest": "/404/index.html" }
-  ]
+  ],
+  "functions": {
+    "php/*.php": {
+      "runtime": "vercel-php@0.7.3"
+    }
+  }
 }
