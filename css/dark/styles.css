@@ -1311,3 +1311,7 @@ a:hover.back-to-top {
 .whatis-main-link {
     font-size: 26px;
   }
+
+.unavailable {
+    cursor: not-available;
+  }
