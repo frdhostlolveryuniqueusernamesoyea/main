@@ -1313,5 +1313,5 @@ a:hover.back-to-top {
   }
 
 .unavailable {
-    cursor: not-available;
+    cursor: not-allowed;
   }
