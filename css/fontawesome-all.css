@@ -3021,7 +3021,7 @@ readers do not read off random characters that represent icons */
 
 .fa-circle::before {
   content: "\f111";
-  background-color: black; }
+  color: black; }
 
 .fa-backward-fast::before {
   content: "\f049"; }
