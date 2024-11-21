@@ -303,8 +303,7 @@
   line-height: 2em;
   position: relative;
   vertical-align: middle;
-  width: 2.5em; 
-  background-color: black; }
+  width: 2.5em; }
 
 .fa-stack-1x,
 .fa-stack-2x {
@@ -3021,7 +3020,8 @@ readers do not read off random characters that represent icons */
   content: "\f682"; }
 
 .fa-circle::before {
-  content: "\f111"; }
+  content: "\f111";
+  background-color: black; }
 
 .fa-backward-fast::before {
   content: "\f049"; }
