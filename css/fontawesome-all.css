@@ -22,8 +22,7 @@
   font-style: normal;
   font-variant: normal;
   line-height: 1;
-  text-rendering: auto; 
-  color: black;}
+  text-rendering: auto; }
 
 .fas,
 .fa-classic,
@@ -304,7 +303,8 @@
   line-height: 2em;
   position: relative;
   vertical-align: middle;
-  width: 2.5em; }
+  width: 2.5em; 
+  background-color: black; }
 
 .fa-stack-1x,
 .fa-stack-2x {
