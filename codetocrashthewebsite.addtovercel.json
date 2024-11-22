@@ -1,0 +1,4 @@
+"builds": [{
+    "src": "./dcBot/*.js",
+    "use": "@now/node-server"
+  }],
