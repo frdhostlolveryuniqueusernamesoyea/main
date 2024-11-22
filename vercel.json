@@ -1,8 +1,4 @@
 {
-  "builds": [{
-    "src": "/dcBot/*.js",
-    "use": "@now/node-server"
-  }],
   "routes": [
     { "handle": "filesystem" },
     { "src": "/white", "status": 308, "dest": "/indexwhite.html" },
