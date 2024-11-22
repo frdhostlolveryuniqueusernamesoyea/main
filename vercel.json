@@ -1,6 +1,6 @@
 {
   "builds": [{
-    "src": "./dcBot/*.js",
+    "src": "/dcBot/*.js",
     "use": "@now/node-server"
   }],
   "routes": [
