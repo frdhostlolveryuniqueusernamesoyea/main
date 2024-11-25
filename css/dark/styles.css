@@ -527,12 +527,40 @@ input[type="checkbox"] {
     transition: all 0.2s;
 }
 
+.get-nav-link:hover {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    border: 1px solid #11114d;
+    border-radius: 16px;
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 0;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
 .dashb-nav-link {
     display: inline-block;
     padding: 1rem 1.5rem;
     border: 1px solid #11114d;
     border-radius: 16px;
     background-color: transparent;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 0;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.dashb-nav-link:hover {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    border: 1px solid #11114d;
+    border-radius: 16px;
+    background-color: #11113c;
     color: #ffffff;
     font-weight: 600;
     font-size: 0.875rem;
