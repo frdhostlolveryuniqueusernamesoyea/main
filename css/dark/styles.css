@@ -1343,3 +1343,9 @@ a:hover.back-to-top {
 .unavailable {
     cursor: not-allowed;
   }
+
+.freqsmalltext {
+    margin-bottom: 1.5rem;
+    font-size: 0.675rem;
+    text-align: center;
+}
