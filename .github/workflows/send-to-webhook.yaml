@@ -1,0 +1,46 @@
+run-name: Send push info to webhook
+on: push
+jobs:
+  send:
+    name: send to webhook
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Make API Request
+        id: api-request
+        uses: muhfaris/request-action@v1
+        with:
+          url: ${{ secrets.API_URL }}
+          headers: ${{ secrets.API_HEADERS }}
+          body: |
+            username: "frdomains",
+            embeds: [
+              {
+                title: 'GitHub',
+                description: 'New push at ${{ GITHUB_REF##*/ }}',
+                fields: [
+              {
+                name: 'Commit message',
+                value: '${{ github.event.head_commit.message }}',
+                inline: true
+              },
+              {
+                name: 'Author',
+                value: '@${{ github.actor }}',
+                inline: true
+              },
+            ],
+          }
+        ]
+          method: POST
+
+      - name: Show API Response Status
+        run: |
+          echo "Response Status: ${{ steps.api-request.outputs.response-status }}"
+
+      - name: Show API Response Data
+        run: |
+          echo "Response Data: ${{ steps.api-request.outputs.response-data }}"
