@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <body>
 <script>
-async function ejsynk() {
   function ask() {
     let askifyes = prompt('Are you sure you want to view your IP Address?');
     if (askifyes == 'y') {
@@ -18,7 +17,7 @@ async function ejsynk() {
     }
   }
   ask();
-  function yes() {
+  async function yes() {
     const IPresponse = await fetch('https://api.ipify.org?format=json');
     const IPdata = await IPresponse.json();
     const userIP = IPdata.ip; //get your ip with ipify cuz im retarded and dont know how to normally
@@ -31,6 +30,5 @@ async function ejsynk() {
     alert('Cancelled.');
   }
 }
-ejsynk();
 </script>
 </body>
