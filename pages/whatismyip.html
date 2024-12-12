@@ -34,5 +34,9 @@
     alert('Cancelled.');
   }
 </script>
-<button onclick="yes();" style="height: 512px; width: 512px;">View my IP address</button>
+<button onclick="yes();" style="height: 512px; width: 512px;" id="viewbutton">View my IP address</button>
+<script>
+  document.getElementById("viewbutton").style.width = window.innerHeight;
+  document.getElementById("viewbutton").style.width = window.innerWidth;
+</script>
 </body>
