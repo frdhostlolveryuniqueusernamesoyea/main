@@ -3,6 +3,13 @@
   <meta name="color-scheme" content="light dark">
 </head>
 <body>
+<button onclick="yes();" style="height: 512px; width: 512px;" id="viewbutton">View my IP address</button>
+<script>
+  const windowheit = window.innerHeight - 10
+  const windowwidt = window.innerWidth - 10
+  document.getElementById("viewbutton").style.width = windowheit + 'px';
+  document.getElementById("viewbutton").style.width = windowwidt + 'px';
+</script>
 <script>
   function ask() {
     let askifyes = prompt('Are you sure you want to view your IP Address? (y/n)');
@@ -33,12 +40,5 @@
   function cancelit() {
     alert('Cancelled.');
   }
-</script>
-<button onclick="yes();" style="height: 512px; width: 512px;" id="viewbutton">View my IP address</button>
-<script>
-  const windowheit = window.innerHeight - 10
-  const windowwidt = window.innerWidth - 10
-  document.getElementById("viewbutton").style.width = windowheit + 'px';
-  document.getElementById("viewbutton").style.width = windowwidt + 'px';
 </script>
 </body>
