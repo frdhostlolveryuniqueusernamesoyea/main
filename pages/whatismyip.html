@@ -36,7 +36,9 @@
 </script>
 <button onclick="yes();" style="height: 512px; width: 512px;" id="viewbutton">View my IP address</button>
 <script>
-  document.getElementById("viewbutton").style.width = window.innerHeight;
-  document.getElementById("viewbutton").style.width = window.innerWidth;
+  const windowheit = window.innerHeight - 3
+  const windowwidt = window.innerWidth - 3
+  document.getElementById("viewbutton").style.width = windowheit + 'px';
+  document.getElementById("viewbutton").style.width = windowwidt + 'px';
 </script>
 </body>
