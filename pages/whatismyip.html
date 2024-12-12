@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<script>
+  function ask() {
+    let askifyes = prompt('Are you sure you want to view your IP Address?');
+    if (askifyes == 'y') {
+      yes();
+    } else if (askifyes == 'Y') {
+      yes();
+    } else if (askifyes == 'n') {
+      cancelit();
+    } else if (askifyes == 'N') {
+      cancelit();
+    } else {
+      alert(`That's not an option.`);
+      ask();
+    }
+  }
+  ask();
+  function yes() {
+    const IPresponse = await fetch('https://api.ipify.org?format=json');
+    const IPdata = await IPresponse.json();
+    const userIP = IPdata.ip; //get your ip with ipify cuz im retarded and dont know how to normally
+    function sayit() {
+      alert('Your IP Address is: ' + userIP);
+    }
+    sayit();
+  }
+  function cancelit() {
+    alert('Cancelled.');
+  }
+</script>
