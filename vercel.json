@@ -5,6 +5,7 @@
     { "src": "/dark", "status": 308, "dest": "/index.html" },
     { "src": "/q&a", "status": 308, "dest": "/pages/q&a.html" },
     { "src": "/q&a.html", "status": 308, "dest": "/pages/q&a.html" },
+    { "src": "/discord", "status": 308, "dest": "https://discord.gg/4eYM6NAdmk" },
     { "src": "/(.*)", "status": 404, "dest": "/404/index.html" }
   ]
 }
