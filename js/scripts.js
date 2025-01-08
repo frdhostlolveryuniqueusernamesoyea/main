@@ -195,7 +195,7 @@
 		const currentYear = new Date().getFullYear();
 		const copyrightText = `&copy; ${currentYear} FrDomains. All rights reserved.`;
 	
-		const containerDiv = document.querySelector(".copyright .container.px-4.sm:px-8.lg\\:grid.lg\\:grid-cols-3");
+		const containerDiv = document.querySelector(".px-4.sm:px-8.lg\\:grid.lg\\:grid-cols-3");
 		if (containerDiv) {
 			const newParagraph = document.createElement("p");
 			newParagraph.className = "pb-2 p-small statement";
