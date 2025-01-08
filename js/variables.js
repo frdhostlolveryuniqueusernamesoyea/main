@@ -1,0 +1,1 @@
+document.getElementById('copyright').innerText = '© 2025 FrDomains. All rights reserved.'
