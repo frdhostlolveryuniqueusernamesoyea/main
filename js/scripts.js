@@ -189,5 +189,11 @@
 			}  
 		});
 	}
-
+	/* Set footbar. */
+	document.addEventListener("DOMContentLoaded", setFootbar());
+	function setFootbar() {
+		const copyrightElement = document.getElementById("copyright");
+        const currentYear = new Date().getFullYear();
+        copyrightElement.innerHTML = `&copy; ${currentYear} FrDomains. All rights reserved.`;
+	}
 })(jQuery);
