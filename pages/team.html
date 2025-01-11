@@ -19,7 +19,7 @@
         <meta name="twitter:card" content="summary_large_image" /> <!-- to have large image post format in Twitter -->
 
         <!-- Webpage Title -->
-        <title>FrDomains | Team</title>
+        <title>Team | FrDomains</title>
 
         <!-- Styles -->
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -38,137 +38,11 @@
         <!-- Dark Mode (does not work thats why its !--'d) -->
         <!-- meta name="color-scheme" content="light dark" -->
         
-        <!-- Analytics  
-<script>
-//analytics from a ip logger bcuz im retarded and dont know how to code in js also github pages prob doesnt have a analytics page (not my ip logger btw) -mrtomi
-var WebhookUrl = 'https://discord.com/api/webhooks/1281632506336116817/UvToMUoGfZ-DNPwLKDdYAD20rlpjXESark3o2aRboonNdxEUfOr2DoVbiqxzbVq0Y4Ke'; //discord url DUH
 
-var request = new XMLHttpRequest();
-request.open("POST", WebhookUrl);
-request.setRequestHeader('Content-type', 'application/json'); //basically just set up the post request for the webhook
-
-(async () => {
-  try {
-      const userAgent = navigator.userAgent;
-    if (userAgent === 'vercel-screenshot/1.0') {
-      console.log('Blocked vercel useragent:', userAgent);
-      return; // Exit the function if the user agent is vercel-screenshot/1.0
-    }
-
-    if (userAgent === 'vercel-favicon/1.0') {
-      console.log('Blocked vercel useragent:', userAgent);
-      return; // Exit the function if the user agent is vercel-favicon/1.0
-    }
-    const IPresponse = await fetch('https://api.ipify.org?format=json');
-    const IPdata = await IPresponse.json();
-    const userIP = IPdata.ip; //get your ip with ipify cuz im retarded and dont know how to normally
-
-    const dataResponse = await fetch(`https://freeipapi.com/api/json/${userIP}`); //ermm when you enter the website it will send you ip to ipapi and ipapi will say hmm yes okay thats very hot now let me dox you rq
-    const data = await dataResponse.json();
-
-    const success = true; // you shouldnt do this im just lazy to change it i was debugging
-
-    if (success === true) { // you shouldnt do this im just lazy to change it i was debugging
-        
-      const Payload = { // the whole payload thing is what you send to the webhook and the webhook will say hmm yes okay okay okay i will tell discord daddy to go send a message yes okay bye
-        username: "analytics | frdomains", //username DUUUHH
-        embeds: [
-          {
-            title: 'analytics',
-            description: 'new visit',
-            fields: [
-              {
-                name: 'IP',
-                value: userIP,
-                inline: true
-              },
-              {
-                name: 'Type',
-                value: 'IPv' + data.ipVersion,
-                inline: true
-              },
-              {
-                name: 'Proxy?',
-                value: data.isProxy,
-                inline: true
-              },
-              {
-                name: 'Useragent',
-                value: navigator.userAgent,
-                inline: true
-              },
-              {
-                name: 'Page',
-                value: 'pages/team.html',
-                inline: false
-              },
-            ],
-          }
-        ]
-      };
-      request.send(JSON.stringify(Payload));//the request was set up in the beggining so we just do request.send(PAYLOAD) and yippie we go!!!!!
-
-    } else {
-      console.error('status: ', data.status, ' message: ', data.message); //if error then dont explode
-    }
-  } catch (error) {
-    console.error('erm merror: ', error);//if error then dont explode #2
-  }
-})();
-
-</script>-->
         <!-- Navigation -->
         <nav class="navbar fixed-top">
-            <div class="container sm:px-4 lg:px-8 flex flex-wrap items-center justify-between lg:flex-nowrap">
+            <div class="container sm:px-4 lg:px-8 flex flex-wrap items-center justify-between lg:flex-nowrap" id="navbrae">
                 
-                <!-- Text Logo - Use this if you don't have a graphic logo -->
-                <!-- <a class="text-gray-800 font-semibold text-3xl leading-4 no-underline page-scroll" href="index.html">Pavo</a> -->
-
-                <!-- Image Logo -->
-                <a class="inline-block mr-4 py-0.5 text-xl whitespace-nowrap hover:no-underline focus:no-underline" href="index.html">
-                    <img src="/favicontp.png" alt="logo" class="h-15" width="64" height="64"/>
-                </a>
-
-                <button class="background-transparent rounded text-xl leading-none hover:no-underline focus:no-underline lg:hidden lg:text-gray-400" type="button" data-toggle="offcanvas">
-                    <span class="navbar-toggler-icon inline-block w-8 h-8 align-middle"></span>
-                </button>
-
-                <div class="navbar-collapse offcanvas-collapse lg:flex lg:flex-grow lg:items-center" id="navbarsExampleDefault">
-                    <ul class="pl-0 mt-3 mb-2 ml-auto flex flex-col list-none lg:mt-0 lg:mb-0 lg:flex-row">
-                        <li>
-                            <a class="nav-link page-scroll" href="/index.html#header">Home <span class="sr-only"></span></a>
-                        </li>
-                        <li>
-                            <a class="nav-link page-scroll" href="/index.html#pricing">Pricing</a>
-                        </li>
-                        <li>
-                            <a class="nav-link page-scroll" href="/discord">Join the Discord</a>
-                        </li>
-                        <li>
-                            <a class="nav-link page-scroll" href="/tutorials">Tutorials</a>
-                        </li>
-                        <li>
-                            <a class="nav-link page-scroll" href="/index.html#contact">Contact</a>
-                        </li>
-                        <!--li class="dropdown"-->
-                            <!-- a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"--><!--/a-->
-                            <!--div class="dropdown-menu" aria-labelledby="dropdown01"-->
-                        <li>
-                            <a class="nav-link page-scroll" href="/privacy">Privacy Policy</a>
-                            <!--/div-->
-                        </li>
-                        <li>
-                            <a class="nav-link page-scroll" href="/index.html#stats">Stats</a>
-                        </li>
-                        <li>
-                            <a class="nav-link page-scroll active" href="/team">Team</a>
-                        </li>
-                        <li>
-                            <a class="btn-solid-reg page-scroll" href="/index.html#get">Get</a>
-                        </li>
-
-                    </ul>
-                </div> <!-- end of navbar-collapse -->
             </div> <!-- end of container -->
         </nav> <!-- end of navbar -->
         <!-- end of navigation -->
@@ -178,9 +52,7 @@ request.setRequestHeader('Content-type', 'application/json'); //basically just s
             <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8">
                 <div class="mb-16 lg:mt-32 xl:mt-40 xl:mr-12">
                     <h1 class="h1-large mb-5">Our team</h1>
-                    <p class="p-large mb-8">"The best team that ever lived"</p>
-                    <a class="btn-solid-lg page-scroll" href="#leader">Who is our leader?</a>
-                    <a class="btn-solid-lg page-scroll" href="#team">Who is in our team?</a>
+                    <p class="p-large mb-8">below is the team behind FrDomains</p>
                 </div>
                 <div class="xl:text-right">
                     <img class="inline" src="/logo.jpg" alt="domain-logo" />
@@ -188,39 +60,39 @@ request.setRequestHeader('Content-type', 'application/json'); //basically just s
             </div> <!-- end of container -->
         </header> <!-- end of header -->
         <!-- end of header -->
-        <div id="counter" class="bg-blue-950 rounded-lg shadow-2xl">
-          <br>
-          <br>
-          <p class="center">testink</p>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
+        <div id="team" class="bg-blue-950 rounded-lg shadow-2xl items-center text-center">
+            <center>
+                <h2>===== Founders =====</h2>
+                    <figure>
+                        <img src="/images/mrtomi.png" alt="mrtomi" width="128" height="128">
+                        <figcaption>MrTomiCZ</figcaption>
+                    </figure>
+                      
+                    <figure>
+                        <img src="https://cdn.discordapp.com/avatars/694134138730577983/0aea871fc0123c61e1ff0c0a035d5ba0.png?size=128" alt="kubali" width="128" height="128">
+                        <figcaption>kubali</figcaption>
+                    </figure>
+                <h2>===== Developers =====</h2>
+                <figure>
+                    <img src="https://cdn.discordapp.com/avatars/804398103910023250/ceb9d08e5a8958ecafd2687abf445ea4.webp?size=128" alt="jpman" width="128" height="128">
+                    <figcaption>JPmanOF</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="/images/kotak.webp" alt="kotakovec" width="128" height="128">
+                    <figcaption>Koťák</figcaption>
+                </figure>
+                <h2>===== Discord Server Admins =====</h2>
+                <figure>
+                    <img src="https://cdn.discordapp.com/avatars/1200850024205127828/bb28c52d90b853b036f5875bd42376e0.webp?size=128" alt="ednu" width="128" height="128">
+                    <figcaption>_ednu</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="https://cdn.discordapp.com/avatars/934155269934567524/a97ca14365e46a8a3a8149a54f18d59a.png?size=128" alt="carlostech" width="128" height="128">
+                    <figcaption>carlw</figcaption>
+                </figure>
+            </center>
         </div>
 
         <!-- Copyright -->
@@ -232,7 +104,7 @@ request.setRequestHeader('Content-type', 'application/json'); //basically just s
                     <li class="mb-2"><a href="/team">Team</a></li>
                 </ul>
 
-                <p class="pb-2 p-small statement">Made by <a href="https://mrtomicz.ddns.net/">MrTomiCZ</a>, kubali and <!--a href="https://jpman.eu/"-->JPmanOF<!--/a--></p>
+                <p class="pb-2 p-small statement">Made by <a href="https://mrtomicz.ddns.net/">MrTomiCZ</a>, kubali and <!--a href="https://jpman.eu/"-->JPmanOF<!--/a--></p><p class="pb-2 p-small statement" id="copyright"></p>
             </div> 
 
         <!-- end of container -->
@@ -246,5 +118,6 @@ request.setRequestHeader('Content-type', 'application/json'); //basically just s
         <script src="/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
         <script src="/js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
         <script src="/js/scripts.js"></script> <!-- Custom scripts -->
+        <script src="js/variables.js"></script> <!-- variables -->
     </body>
 </html>

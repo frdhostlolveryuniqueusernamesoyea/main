@@ -3,9 +3,20 @@
     { "handle": "filesystem" },
     { "src": "/white", "status": 308, "dest": "/indexwhite.html" },
     { "src": "/dark", "status": 308, "dest": "/index.html" },
-    { "src": "/q&a", "status": 308, "dest": "/pages/q&a.html" },
-    { "src": "/q&a.html", "status": 308, "dest": "/pages/q&a.html" },
     { "src": "/discord", "status": 308, "dest": "https://discord.gg/4eYM6NAdmk" },
+    { "src": "/q&a", "status": 200, "dest": "/pages/q&a.html" },
+    { "src": "/wimip", "status": 200, "dest": "/pages/whatismyip.html" },
+    { "src": "/team", "status": 200, "dest": "/pages/team.html" },
+    { "src": "/warning", "status": 200, "dest": "/pages/warning.html" },
+    { "src": "/ee", "status": 200, "dest": "/pages/edgeerror.html" },
+    { "src": "/ce", "status": 200, "dest": "/pages/chromeerror.html" },
+    { "src": "/comingsoon", "status": 200, "dest": "/pages/comingsoon.html" },
+    { "src": "/static", "status": 200, "dest": "/pages/static.html" },
+    { "src": "/preparing", "status": 200, "dest": "/pages/preparing.html" },
+    { "src": "/snake", "status": 200, "dest": "/pages/snake.html" },
+    { "src": "/privacy", "status": 200, "dest": "/pages/privacy.html" },
+    { "src": "/404/(.*)", "status": 200, "dest": "/pages/404.html" },
+    { "src": "/admin", "status": 200, "dest": "dash.frdomains.site" },
     { "src": "/(.*)", "status": 404, "dest": "/404/index.html" }
   ]
 }
