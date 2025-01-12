@@ -15,7 +15,7 @@
     { "src": "/preparing", "status": 200, "dest": "/pages/preparing.html" },
     { "src": "/snake", "status": 200, "dest": "/pages/snake.html" },
     { "src": "/privacy", "status": 200, "dest": "/pages/privacy.html" },
-    { "src": "/404/(.*)", "status": 200, "dest": "/pages/404.html" },
+    { "src": "/404", "status": 200, "dest": "/pages/404.html" },
     { "src": "/admin", "status": 200, "dest": "dash.frdomains.site" },
     { "src": "/(.*)", "status": 404, "dest": "/404/index.html" }
   ]
