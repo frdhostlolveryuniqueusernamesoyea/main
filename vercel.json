@@ -17,5 +17,10 @@
     { "src": "/privacy", "status": 200, "dest": "/pages/privacy.html" },
     { "src": "/admin", "status": 200, "dest": "dash.frdomains.site" },
     { "src": "/(.*)", "status": 404, "dest": "/pages/404.html" }
-  ]
+  ],
+  "functions": {
+    "api/*.php": {
+      "runtime": "vercel-php@0.7.3"
+    }
+  }
 }
