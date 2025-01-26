@@ -1349,3 +1349,7 @@ a:hover.back-to-top {
     font-size: 0.675rem;
     text-align: center;
 }
+
+.invert-color {
+            filter: invert(1);
+}
