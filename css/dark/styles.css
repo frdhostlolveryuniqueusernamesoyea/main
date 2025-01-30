@@ -1382,7 +1382,7 @@ a:hover.back-to-top {
         .screen {
             width: 100%;
             height: 100%;
-            background-color: #00ffcc;
+            background-color: black;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -1400,4 +1400,14 @@ a:hover.back-to-top {
                 opacity: 0;
                 background-color: black;
             }
+        }
+
+        .pc-container {
+            position: relative;
+            width: 400px;
+            height: 300px;
+            background: url('pc-frame.webp') no-repeat center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
