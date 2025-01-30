@@ -1355,6 +1355,6 @@ a:hover.back-to-top {
 }
 
 .downbckgrad {
-    background: rgb(2,0,36);
-    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(5,5,112,1) 36%, rgba(40,97,176,1) 100%);
+    /* background: rgb(2,0,36); */
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,44,106,1) 100%);
 }
