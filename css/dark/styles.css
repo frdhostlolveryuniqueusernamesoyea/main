@@ -1326,11 +1326,11 @@ a:hover.back-to-top {
   }
 
 .centermiddle {
-   /*left: 0;
+   left: 0;
    line-height: 200px;
    margin-top: -100px;
    position: absolute;
-   text-align: center; */
+   text-align: center;
    top: 50%;
    width: 100%;
 }
@@ -1393,7 +1393,7 @@ a:hover.back-to-top {
             font-size: 20px;
             font-family: Arial, sans-serif;
             color: black;
-            animation: turnOff 0.5s forwards 3s;
+            animation: turnOff 0.5s forwards 1.5s;
         }
 
         /* Stand */
