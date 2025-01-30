@@ -1406,7 +1406,7 @@ a:hover.back-to-top {
             position: relative;
             width: 400px;
             height: 300px;
-            background: url('pc-frame.webp') no-repeat center/cover;
+            background: url('pc-frame.webp');
             display: flex;
             justify-content: center;
             align-items: center;
