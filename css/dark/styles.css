@@ -1369,8 +1369,8 @@ a:hover.back-to-top {
         .pc {
             width: 300px;
             height: 200px;
-            /* background-color: #000000; */
-            background: url('pc-frame.webp');
+            background-color: #000000;
+            background-image: url('pc-frame.webp');
             border-radius: 10px;
             position: relative;
             display: flex;
