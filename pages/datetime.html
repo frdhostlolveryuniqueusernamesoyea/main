@@ -29,17 +29,16 @@
     </style>
     <script>
         function showDateTime() {
-            while (true) {
+            //while (true) {
                 var d = new Date();
                 var date = d.toDateString();
                 var time = d.toLocaleTimeString();
                 document.getElementById("datetime").innerHTML = date + " " + time;
-            }
+            //}
         }
 
     </script>
 </head>
 <body onload="showDateTime()">
-    <h1>Current Date and Time</h1>
-    <p id="datetime" class="cetner"></p>
+    <h1 id="datetime" class="cetner"></h1>
 </body>
