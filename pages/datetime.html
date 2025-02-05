@@ -1,34 +1,8 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <title>Date & Time Screensaver | FrDomains</title>
     <meta name="color-scheme" content="light dark">
-    <style>
-        /*body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        h1 {
-            margin-top: 50px;
-        }
-        p {
-            font-size: 24px;
-            margin-top: 20px;
-        } */
-         .cetner {
-            left: 0;
-            line-height: 200px;
-            margin-top: -100px;
-            position: absolute;
-            text-align: center;
-            top: 50%;
-            width: 100%;
-         }
-    </style>
-
-    
     <style>
         body {
             margin: 0;
@@ -37,6 +11,16 @@
             justify-content: center;
             align-items: center;
             background-color: #f0f0f0;
+        }
+
+        .cetner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+            text-align: center;
         }
 
         .movable-window {
@@ -59,72 +43,83 @@
             cursor: grab;
             border-radius: 8px 8px 0 0;
             user-select: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .x-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
         }
 
         .movable-content {
             padding: 15px;
-            height: calc(100% - 42px); /* Adjust height for header */
+            height: calc(100% - 42px);
             overflow: auto;
         }
-
-        .x-btn {
-            text-align: right;
-            content: "X";
-        }
     </style>
-
-
-    <script>
-        function showDateTime() {
-            //while (true) {
-                var d = new Date();
-                var date = d.toDateString();
-                var time = d.toLocaleTimeString();
-                document.getElementById("datetime").innerHTML = date + " " + time;
-            //}
-        }
-
-    </script>
-
-    <script>
-        const movableWindow = document.getElementById("movableWindow");
-        const movableHeader = document.getElementById("movableHeader");
-
-        let isDragging = false;
-        let offsetX, offsetY;
-
-        movableHeader.addEventListener("mousedown", (e) => {
-            isDragging = true;
-            offsetX = e.clientX - movableWindow.offsetLeft;
-            offsetY = e.clientY - movableWindow.offsetTop;
-            movableHeader.style.cursor = "grabbing";
-        });
-
-        document.addEventListener("mousemove", (e) => {
-            if (isDragging) {
-                movableWindow.style.left = e.clientX - offsetX + "px";
-                movableWindow.style.top = e.clientY - offsetY + "px";
-            }
-        });
-
-        document.addEventListener("mouseup", () => {
-            isDragging = false;
-            movableHeader.style.cursor = "grab";
-        });
-
-        function hidewindow() {
-            document.getElementById("movableWindow").hidden = true;
-        }
-    </script>
 </head>
-<body onload="showDateTime()">
+<body>
+
     <h1 id="datetime" class="cetner"></h1>
 
-    
     <div class="movable-window" id="movableWindow">
-        <div class="movable-header" id="movableHeader">Information <button onclick="hidewindow()" class="x-btn"></button></div>
+        <div class="movable-header" id="movableHeader">
+            Information 
+            <button onclick="hidewindow()" class="x-btn">X</button>
+        </div>
         <div class="movable-content">
             <p>Fun fact: you can press F on your keyboard to fullscreen this screensaver.</p>
         </div>
     </div>
+
+    <script>
+        function showDateTime() {
+            setInterval(() => {
+                var d = new Date();
+                var date = d.toDateString();
+                var time = d.toLocaleTimeString();
+                document.getElementById("datetime").innerHTML = date + " " + time;
+            }, 1000);
+        }
+
+        function hidewindow() {
+            document.getElementById("movableWindow").style.display = "none";
+        }
+
+        window.onload = function () {
+            showDateTime();
+
+            const movableWindow = document.getElementById("movableWindow");
+            const movableHeader = document.getElementById("movableHeader");
+
+            let isDragging = false;
+            let offsetX, offsetY;
+
+            movableHeader.addEventListener("mousedown", (e) => {
+                isDragging = true;
+                offsetX = e.clientX - movableWindow.offsetLeft;
+                offsetY = e.clientY - movableWindow.offsetTop;
+                movableHeader.style.cursor = "grabbing";
+            });
+
+            document.addEventListener("mousemove", (e) => {
+                if (isDragging) {
+                    movableWindow.style.left = e.clientX - offsetX + "px";
+                    movableWindow.style.top = e.clientY - offsetY + "px";
+                }
+            });
+
+            document.addEventListener("mouseup", () => {
+                isDragging = false;
+                movableHeader.style.cursor = "grab";
+            });
+        };
+    </script>
+
 </body>
+</html>
