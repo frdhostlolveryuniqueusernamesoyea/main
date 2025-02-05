@@ -73,53 +73,87 @@
             <button onclick="hidewindow()" class="x-btn">X</button>
         </div>
         <div class="movable-content">
-            <p>Fun fact: you can press F on your keyboard to fullscreen this screensaver.</p>
+            <p>Fun fact: you can use F on your keyboard to toggle fullscreen.</p>
         </div>
     </div>
 
-    <script>
-        function showDateTime() {
-            setInterval(() => {
-                var d = new Date();
-                var date = d.toDateString();
-                var time = d.toLocaleTimeString();
-                document.getElementById("datetime").innerHTML = date + " " + time;
-            }, 1000);
-        }
-
-        function hidewindow() {
-            document.getElementById("movableWindow").style.display = "none";
-        }
-
-        window.onload = function () {
-            showDateTime();
-
-            const movableWindow = document.getElementById("movableWindow");
-            const movableHeader = document.getElementById("movableHeader");
-
-            let isDragging = false;
-            let offsetX, offsetY;
-
-            movableHeader.addEventListener("mousedown", (e) => {
-                isDragging = true;
-                offsetX = e.clientX - movableWindow.offsetLeft;
-                offsetY = e.clientY - movableWindow.offsetTop;
-                movableHeader.style.cursor = "grabbing";
-            });
-
-            document.addEventListener("mousemove", (e) => {
-                if (isDragging) {
-                    movableWindow.style.left = e.clientX - offsetX + "px";
-                    movableWindow.style.top = e.clientY - offsetY + "px";
-                }
-            });
-
-            document.addEventListener("mouseup", () => {
-                isDragging = false;
-                movableHeader.style.cursor = "grab";
-            });
-        };
-    </script>
-
 </body>
 </html>
+
+<script>
+    function showDateTime() {
+        setInterval(() => {
+            var d = new Date();
+            var date = d.toDateString();
+            var time = d.toLocaleTimeString();
+            document.getElementById("datetime").innerHTML = date + " " + time;
+        }, 1000);
+    }
+
+    function hidewindow() {
+        document.getElementById("movableWindow").style.display = "none";
+    }
+
+    window.onload = function () {
+        showDateTime();
+
+        const movableWindow = document.getElementById("movableWindow");
+        const movableHeader = document.getElementById("movableHeader");
+
+        let isDragging = false;
+        let offsetX, offsetY;
+
+        movableHeader.addEventListener("mousedown", (e) => {
+            isDragging = true;
+            offsetX = e.clientX - movableWindow.offsetLeft;
+            offsetY = e.clientY - movableWindow.offsetTop;
+            movableHeader.style.cursor = "grabbing";
+        });
+
+        document.addEventListener("mousemove", (e) => {
+            if (isDragging) {
+                movableWindow.style.left = e.clientX - offsetX + "px";
+                movableWindow.style.top = e.clientY - offsetY + "px";
+            }
+        });
+
+        document.addEventListener("mouseup", () => {
+            isDragging = false;
+            movableHeader.style.cursor = "grab";
+        });
+    };
+
+    /* Get the documentElement (<html>) to display the page in fullscreen */
+        var elemFlscr = document.documentElement;
+    
+        /* View in fullscreen */
+        function openFullscreen() {
+            if (elemFlscr.requestFullscreen) {
+                elemFlscr.requestFullscreen();
+            } else if (elemFlscr.webkitRequestFullscreen) { /* Safari */
+                elemFlscr.webkitRequestFullscreen();
+            } else if (elemFlscr.msRequestFullscreen) { /* IE11 */
+                elemFlscr.msRequestFullscreen();
+            }
+        }
+    
+        /* Close fullscreen */
+        function closeFullscreen() {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.webkitExitFullscreen) { /* Safari */
+                document.webkitExitFullscreen();
+            } else if (document.msExitFullscreen) { /* IE11 */
+                document.msExitFullscreen();
+            }
+        }
+        onkeypress = function(e) {
+            if (e.key === "f") {
+                openFullscreen();
+                //const audio = new Audio('https://www.myinstants.com/media/sounds/air-horn-club-sample_1.mp3');
+            }
+            if (e.key === "f") {
+                closeFullscreen();
+            }
+        }
+</script>
