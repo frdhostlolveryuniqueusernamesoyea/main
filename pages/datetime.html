@@ -1,0 +1,17 @@
+<head>
+    <title>Date & Time Screensaver | FrDomains</title>
+    <meta name="color-scheme" content="light dark">
+    <script>
+        function showDateTime() {
+            var d = new Date();
+            var date = d.toDateString();
+            var time = d.toLocaleTimeString();
+            document.getElementById("datetime").innerHTML = date + " " + time;
+        }
+
+    </script>
+</head>
+<body onload="showDateTime()">
+    <h1>Current Date and Time</h1>
+    <p id="datetime"></p>
+</body>
