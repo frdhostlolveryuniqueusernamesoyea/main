@@ -25,11 +25,12 @@
     }
     onkeypress = function(e) {
         if (e.key === "f") {
-            openFullscreen();
-            const audio = new Audio('https://www.myinstants.com/media/sounds/air-horn-club-sample_1.mp3');
+            const myTimeout = setTimeout(openFullscreen, 500);
+            //openFullscreen();
+            //const audio = new Audio('https://www.myinstants.com/media/sounds/air-horn-club-sample_1.mp3');
         }
-        if (e.key === "f") {
-            closeFullscreen();
-        }
+        // if (e.key === "q") {
+        //     closeFullscreen();
+        // }
     }
     </script>
