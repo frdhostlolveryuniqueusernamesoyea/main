@@ -1,35 +1,43 @@
-<script>
-    /* Get the documentElement (<html>) to display the page in fullscreen */
-    var elem = document.documentElement;
+<head>
+    <title>Party Mode | FrDomains</title>
+    <meta name="color-scheme" content="light dark">
+    <script>
+        /* Get the documentElement (<html>) to display the page in fullscreen */
+        var elem = document.documentElement;
     
-    /* View in fullscreen */
-    function openFullscreen() {
-      if (elem.requestFullscreen) {
-        elem.requestFullscreen();
-      } else if (elem.webkitRequestFullscreen) { /* Safari */
-        elem.webkitRequestFullscreen();
-      } else if (elem.msRequestFullscreen) { /* IE11 */
-        elem.msRequestFullscreen();
-      }
-    }
+        /* View in fullscreen */
+        function openFullscreen() {
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.webkitRequestFullscreen) { /* Safari */
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE11 */
+                elem.msRequestFullscreen();
+            }
+        }
     
-    /* Close fullscreen */
-    function closeFullscreen() {
-      if (document.exitFullscreen) {
-        document.exitFullscreen();
-      } else if (document.webkitExitFullscreen) { /* Safari */
-        document.webkitExitFullscreen();
-      } else if (document.msExitFullscreen) { /* IE11 */
-        document.msExitFullscreen();
-      }
-    }
-    onkeypress = function(e) {
-        if (e.key === "f") {
-            openFullscreen();
-            //const audio = new Audio('https://www.myinstants.com/media/sounds/air-horn-club-sample_1.mp3');
+        /* Close fullscreen */
+        function closeFullscreen() {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.webkitExitFullscreen) { /* Safari */
+                document.webkitExitFullscreen();
+            } else if (document.msExitFullscreen) { /* IE11 */
+                document.msExitFullscreen();
+            }
         }
-        if (e.key === "f") {
-            closeFullscreen();
+        onkeypress = function(e) {
+            if (e.key === "f") {
+                openFullscreen();
+                //const audio = new Audio('https://www.myinstants.com/media/sounds/air-horn-club-sample_1.mp3');
+            }
+            if (e.key === "f") {
+                closeFullscreen();
+            }
         }
-    }
     </script>
+</head>
+<body>
+    <h1>Party Mode</h1>
+    <p>Hold the F key to start party mode.</p>
+</body>
