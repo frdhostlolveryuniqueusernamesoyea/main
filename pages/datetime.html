@@ -1,17 +1,45 @@
 <head>
     <title>Date & Time Screensaver | FrDomains</title>
     <meta name="color-scheme" content="light dark">
+    <style>
+        /*body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin-top: 50px;
+        }
+        p {
+            font-size: 24px;
+            margin-top: 20px;
+        } */
+         .cetner {
+            left: 0;
+            line-height: 200px;
+            margin-top: -100px;
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            width: 100%;
+         }
+    </style>
     <script>
         function showDateTime() {
-            var d = new Date();
-            var date = d.toDateString();
-            var time = d.toLocaleTimeString();
-            document.getElementById("datetime").innerHTML = date + " " + time;
+            while (true) {
+                var d = new Date();
+                var date = d.toDateString();
+                var time = d.toLocaleTimeString();
+                document.getElementById("datetime").innerHTML = date + " " + time;
+            }
         }
 
     </script>
 </head>
 <body onload="showDateTime()">
     <h1>Current Date and Time</h1>
-    <p id="datetime"></p>
+    <p id="datetime" class="cetner"></p>
 </body>
