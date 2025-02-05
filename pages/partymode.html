@@ -23,9 +23,13 @@
         document.msExitFullscreen();
       }
     }
-
-    while (true) {
-        openFullscreen();
-        closeFullscreen();
+    onkeypress = function(e) {
+        if (e.key === "f") {
+            openFullscreen();
+            const audio = new Audio('https://www.myinstants.com/media/sounds/air-horn-club-sample_1.mp3');
+        }
+        if (e.key === "f") {
+            closeFullscreen();
+        }
     }
     </script>
