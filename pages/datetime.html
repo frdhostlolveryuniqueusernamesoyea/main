@@ -27,6 +27,53 @@
             width: 100%;
          }
     </style>
+
+    
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        .movable-window {
+            width: 300px;
+            height: 200px;
+            background-color: white;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            z-index: 1000;
+        }
+
+        .movable-header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            cursor: grab;
+            border-radius: 8px 8px 0 0;
+            user-select: none;
+        }
+
+        .movable-content {
+            padding: 15px;
+            height: calc(100% - 42px); /* Adjust height for header */
+            overflow: auto;
+        }
+
+        .x-btn {
+            text-align: right;
+            content: "X";
+        }
+    </style>
+
+
     <script>
         function showDateTime() {
             //while (true) {
@@ -38,7 +85,46 @@
         }
 
     </script>
+
+    <script>
+        const movableWindow = document.getElementById("movableWindow");
+        const movableHeader = document.getElementById("movableHeader");
+
+        let isDragging = false;
+        let offsetX, offsetY;
+
+        movableHeader.addEventListener("mousedown", (e) => {
+            isDragging = true;
+            offsetX = e.clientX - movableWindow.offsetLeft;
+            offsetY = e.clientY - movableWindow.offsetTop;
+            movableHeader.style.cursor = "grabbing";
+        });
+
+        document.addEventListener("mousemove", (e) => {
+            if (isDragging) {
+                movableWindow.style.left = e.clientX - offsetX + "px";
+                movableWindow.style.top = e.clientY - offsetY + "px";
+            }
+        });
+
+        document.addEventListener("mouseup", () => {
+            isDragging = false;
+            movableHeader.style.cursor = "grab";
+        });
+
+        function hidewindow() {
+            document.getElementById("movableWindow").hidden = true;
+        }
+    </script>
 </head>
 <body onload="showDateTime()">
     <h1 id="datetime" class="cetner"></h1>
+
+    
+    <div class="movable-window" id="movableWindow">
+        <div class="movable-header" id="movableHeader">Information <button onclick="hidewindow()" class="x-btn"></button></div>
+        <div class="movable-content">
+            <p>Fun fact: you can press F on your keyboard to fullscreen this screensaver.</p>
+        </div>
+    </div>
 </body>
