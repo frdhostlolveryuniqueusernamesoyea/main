@@ -80,7 +80,7 @@
             <p>
                 Fun fact: you can use F on your keyboard to toggle fullscreen, or by clicking the button below.
                 <br><br>
-                <button onclick="openFullscreen()">Open Fullscreen</button>
+                <button onclick="opnFulskryn()" id="flscrbtn">Open Fullscreen</button>
             </p>
         </div>
     </div>
@@ -171,5 +171,17 @@
             if (e.key === "F") {
                 closeFullscreen();
             }
+        }
+
+        function opnFulscryn() {
+            openFullscreen();
+            document.getElementById("flscrbtn").innerHTML = "Close Fullscreen";
+            document.getElementById("flscrbtn").setAttribute("onclick", "closFulskryn()");
+        }
+
+        function closFulskryn() {
+            closeFullscreen();
+            document.getElementById("flscrbtn").innerHTML = "Open Fullscreen";
+            document.getElementById("flscrbtn").setAttribute("onclick", "opnFulscryn()");
         }
 </script>
