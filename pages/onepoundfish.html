@@ -6,12 +6,15 @@
     <title>ONE POUND FISH | FrDomains</title>
     <meta name="color-scheme" content="light dark">
 </head>
-<body onload="playAudio()">
+<body>
     <audio id="myAudio" src="/files/onepoundfish.mp3"></audio>
     <button onclick="playAudio()">Play Audio</button>
     <button onclick="pauseAudio()">Pause Audio</button>
 </body>
 <script>
+    window.onload = function() {
+        document.getElementById('myAudio').play();
+    };
     // Get the audio element
     const audio = document.getElementById('myAudio');
 
