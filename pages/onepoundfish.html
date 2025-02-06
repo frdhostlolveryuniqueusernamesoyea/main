@@ -12,7 +12,10 @@
     <button onclick="pauseAudio()">Pause Audio</button>
 </body>
 <script>
-    document.getElementById('myAudio').play();
+    document.addEventListener("click", () => {
+        const audio = document.getElementById("myAudio");
+        audio.play().catch(error => console.error("Autoplay blocked:", error));
+    }, { once: true }); // Runs only on first click
 
     // Get the audio element
     const audio = document.getElementById('myAudio');
