@@ -17,6 +17,7 @@
     { "src": "/privacy", "status": 200, "dest": "/pages/privacy.html" },
     { "src": "/admin", "status": 200, "dest": "dash.frdomains.site" },
     { "src": "/partymode", "status": 200, "dest": "/pages/partymode.html" },
+    { "src": "/opf", "status": 200, "dest": "/pages/onepoundfish.html" },
     { "src": "/(.*)", "status": 404, "dest": "/pages/404.html" }
   ]
 }

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONE POUND FISH | FrDomains</title>
+    <meta name="color-scheme" content="light dark">
+</head>
+<body onload="playAudio()">
+    <audio id="myAudio" src="/files/onepoundfish.mp3"></audio>
+    <button onclick="playAudio()">Play Audio</button>
+    <button onclick="pauseAudio()">Pause Audio</button>
+</body>
+<script>
+    // Get the audio element
+    const audio = document.getElementById('myAudio');
+
+    // Function to play the audio
+    function playAudio() {
+        audio.play();
+    }
+
+    // Function to pause the audio
+    function pauseAudio() {
+        audio.pause();
+    }
+
+</script>
+</html>
