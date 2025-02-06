@@ -5,11 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ONE POUND FISH | FrDomains</title>
     <meta name="color-scheme" content="light dark">
+    <style>
+        body {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <audio id="myAudio" src="/files/onepoundfish.mp3"></audio>
     <button onclick="playAudio()">Play Audio</button>
     <button onclick="pauseAudio()">Pause Audio</button>
+    <br>
+    <p>(click anywhere to start playing)</p>
 </body>
 <script>
     document.addEventListener("click", () => {
