@@ -135,7 +135,7 @@ h6 {
 .btn-solid-reg:hover {
     border: 1px solid #594cda;
     background-color: transparent;
-    color: #ffffff; /* needs to stay here because of the color property of a tag */
+    color: #594cda; /* needs to stay here because of the color property of a tag */
     text-decoration: none;
 }
 
