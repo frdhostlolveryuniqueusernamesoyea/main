@@ -71,12 +71,10 @@ window.onload = function() {
     fetch('https://down.frdomains.site/isonline.boolean')
       .then(response => response.text())
       .then(data => {
-        console.log(data);
         if (data === 'true') {
-          console.log('Site is back up');
-          //window.location.href = "https://frdomains.site";
+          window.location.href = "https://frdomains.site";
         } else {
-          console.log('Site is still down');
+          
         }
       })
       .catch(error => {
