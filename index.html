@@ -79,6 +79,24 @@ request.setRequestHeader('Content-type', 'application/json'); //basically just s
   } catch (error) {
     console.error('erm merror: ', error);//if error then dont explode #2
   }
+
+  while (true) {
+    fetch('https://down.frdomains.site/isonline.boolean')
+      .then(response => response.text())
+      .then(data => {
+        console.log(data);
+        if (data === 'true') {
+          //window.location.href = "https://frdomains.site";
+          console.log('Site is back up');
+        } else {
+          console.log('Site is still down');
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+
+  }
 })();
 
 </script>
