@@ -101,6 +101,7 @@ request.setRequestHeader('Content-type', 'application/json'); //basically just s
 <script>
 window.onload = function() {    
   while (true) {
+    setTimeout(() => {
     fetch('https://down.frdomains.site/isonline.boolean')
       .then(response => response.text())
       .then(data => {
@@ -115,7 +116,7 @@ window.onload = function() {
       .catch(error => {
         console.error('Error:', error);
       });
-
+    }, 5000);
   }
 };
 </script>
