@@ -1,4 +1,3 @@
-document.getElementById('copyright').innerText = '© 2025 FrDomains. All rights reserved.'
 
 const navbar = `                <!-- Text Logo - Use this if you don't have a graphic logo -->
                 <!-- <a class="text-gray-800 font-semibold text-3xl leading-4 no-underline page-scroll" href="index.html">Pavo</a> -->
@@ -61,7 +60,13 @@ const navbar = `                <!-- Text Logo - Use this if you don't have a gr
                     </ul>
                 </div> <!-- end of navbar-collapse -->`;
 
+const responsefromwarn = fetch("https://frdomains.site/pages/warning.html");
+
 
 
 
 document.getElementById('navbrae').innerHTML = navbar;
+
+document.getElementById('copyright').innerText = '© 2025 FrDomains. All rights reserved.'
+
+document.getElementById('warning').innerText = responsefromwarn
