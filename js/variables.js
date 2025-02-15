@@ -77,4 +77,4 @@ document.getElementById('navbrae').innerHTML = navbar;
 
 document.getElementById('copyright').innerText = '© 2025 FrDomains. All rights reserved.'
 
-document.getElementById('warning').innerText = warnpage
+document.getElementById('warning').innerHTML = warnpage
