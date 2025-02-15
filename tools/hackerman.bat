@@ -1,1 +1,1 @@
-@color a && cd %systemdrive% && dir /s 
+@color a && cd %systemdrive%\ && dir /s 
