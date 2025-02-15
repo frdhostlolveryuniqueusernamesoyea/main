@@ -35,7 +35,8 @@ const navbar = `                <!-- Text Logo - Use this if you don't have a gr
                             <a class="nav-link page-scroll dropdown-item" href="/tutorials">Tutorials</a>
                         <div class="dropdown-divider"></div>
                             <a class="nav-link page-scroll dropdown-item" href="/privacy">Privacy Policy</a>
-                        <!-- div class="dropdown-divider"></div -->
+                        <div class="dropdown-divider"></div>
+                            <a class="nav-link page-scroll dropdown-item" href="/tools">Tools</a>
                             <!-- a class="nav-link page-scroll dropdown-item" href="/whatis">WhatIs (ALPHA)</a -->
                         <!-- div class="dropdown-divider"></div-->
                         </div>
