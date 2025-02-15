@@ -60,8 +60,7 @@ const navbar = `                <!-- Text Logo - Use this if you don't have a gr
                     </ul>
                 </div> <!-- end of navbar-collapse -->`;
 
-const responsefromwarn = fetch("https://frdomains.site/pages/warning.html");
-    fetch('https://down.frdomains.site/isonline.boolean')
+    fetch('https://frdomains.site/pages/warning.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('warning').innerHTML = data;
