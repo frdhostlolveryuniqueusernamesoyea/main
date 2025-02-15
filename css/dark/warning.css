@@ -1,9 +1,11 @@
 /* warning page css */
-body {
+.maindiv {
+  /*
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  min-height: 100vh; /* Full viewport height */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  */
   margin: 0; /* Remove default body margin */
 }
 
