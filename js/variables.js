@@ -60,7 +60,15 @@ const navbar = `                <!-- Text Logo - Use this if you don't have a gr
                     </ul>
                 </div> <!-- end of navbar-collapse -->`;
 
-const responsefromwarn = fetch("https://frdomains.site/pages/warning.html");
+const warnpage = `<!-- styles -->
+<link rel="stylesheet" href="/css/dark/warning.css" />
+<!-- the warning -->
+    <div class="warning">
+        <img src="/images/warning.png" height="64" width="64" />
+        <!-- <p> INFO: We have set up an egg hunt! Good luck! Hints: 1: <i>I am hidden in plain sight, just invisible.</i></p> -->
+        <p> INFO: We are searching for developers who know Node.JS, or any framework that can be ran on Vercel, which can be used as an API.</p>
+    </div>
+<!-- code: > opasd < -->`;
 
 
 
@@ -69,4 +77,4 @@ document.getElementById('navbrae').innerHTML = navbar;
 
 document.getElementById('copyright').innerText = '© 2025 FrDomains. All rights reserved.'
 
-document.getElementById('warning').innerText = responsefromwarn
+document.getElementById('warning').innerText = warnpage
