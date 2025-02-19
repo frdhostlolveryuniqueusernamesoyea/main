@@ -16,11 +16,14 @@
     let askifyes = prompt('Are you sure you want to view your IP Address? (OK / Cancel)');
 
     if (askifyes === null) {
-        document.getElementById("bodej").innerText = "Uživatel klikl na Zrušit.";
+        // cancel
+        cancelit();
     } else if (askifyes === "") {
-        document.getElementById("bodej").innerText ="Uživatel nevyplnil nic a klikl na OK.";
+        // OK
+        yes();
     } else {
-        document.getElementById("bodej").innerText ="Uživatel zadal:" + askifyes;
+        alert("Not an option.");
+        ask();
     }
     // if (askifyes == 'y') {
     //   yes();
