@@ -15,9 +15,9 @@
   function ask() {
     let askifyes = prompt('Are you sure you want to view your IP Address? (OK / Cancel)');
 
-    if (odpoved === null) {
+    if (askifyes === null) {
         document.getElementsByName(body)[0].innerText = "Uživatel klikl na Zrušit.";
-    } else if (odpoved === "") {
+    } else if (askifyes === "") {
         document.getElementsByName(body)[0].innerText ="Uživatel nevyplnil nic a klikl na OK.";
     } else {
         document.getElementsByName(body)[0].innerText ="Uživatel zadal:", askifyes;
