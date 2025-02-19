@@ -13,19 +13,27 @@
 </script>
 <script>
   function ask() {
-    let askifyes = prompt('Are you sure you want to view your IP Address? (y/n)');
-    if (askifyes == 'y') {
-      yes();
-    } else if (askifyes == 'Y') {
-      yes();
-    } else if (askifyes == 'n') {
-      cancelit();
-    } else if (askifyes == 'N') {
-      cancelit();
+    let askifyes = prompt('Are you sure you want to view your IP Address? (OK / Cancel)');
+
+    if (odpoved === null) {
+        document.getElementsByName(body)[0].innerText = "Uživatel klikl na Zrušit.";
+    } else if (odpoved === "") {
+        document.getElementsByName(body)[0].innerText ="Uživatel nevyplnil nic a klikl na OK.";
     } else {
-      alert(`That's not an option.`);
-      ask();
+        document.getElementsByName(body)[0].innerText ="Uživatel zadal:", askifyes;
     }
+    // if (askifyes == 'y') {
+    //   yes();
+    // } else if (askifyes == 'Y') {
+    //   yes();
+    // } else if (askifyes == 'n') {
+    //   cancelit();
+    // } else if (askifyes == 'N') {
+    //   cancelit();
+    // } else {
+    //   alert(`That's not an option.`);
+    //   ask();
+    // }
   }
   ask();
   async function yes() {
