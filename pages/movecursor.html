@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vlastní kurzor</title>
+    <style>
+        body {
+            cursor: none; /* Skryje systémový kurzor */
+        }
+        .custom-cursor {
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            pointer-events: none;
+            transition: transform 0.05s linear; /* Plynulejší pohyb */
+        }
+    </style>
+</head>
+<body>
+
+<div class="custom-cursor"></div>
+
+<script>
+    const cursor = document.querySelector('.custom-cursor');
+
+    document.addEventListener('mousemove', (event) => {
+        cursor.style.transform = `translate(${event.clientX}px, ${event.clientY}px)`;
+    });
+
+    // Simulace přesunu kurzoru na souřadnice (300, 300) po 2 sekundách
+    setTimeout(() => {
+        cursor.style.transform = `translate(300px, 300px)`;
+    }, 2000);
+</script>
+
+</body>
+</html>
