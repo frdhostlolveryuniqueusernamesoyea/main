@@ -16,11 +16,11 @@
     let askifyes = prompt('Are you sure you want to view your IP Address? (OK / Cancel)');
 
     if (askifyes === null) {
-        document.getElementsByName(body)[0].innerText = "Uživatel klikl na Zrušit.";
+        document.getElementsByName("body")[0].innerText = "Uživatel klikl na Zrušit.";
     } else if (askifyes === "") {
-        document.getElementsByName(body)[0].innerText ="Uživatel nevyplnil nic a klikl na OK.";
+        document.getElementsByName("body")[0].innerText ="Uživatel nevyplnil nic a klikl na OK.";
     } else {
-        document.getElementsByName(body)[0].innerText ="Uživatel zadal:", askifyes;
+        document.getElementsByName("body")[0].innerText ="Uživatel zadal:", askifyes;
     }
     // if (askifyes == 'y') {
     //   yes();
