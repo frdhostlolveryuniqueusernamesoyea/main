@@ -2,7 +2,7 @@
 <head>
   <meta name="color-scheme" content="light dark">
 </head>
-<body>
+<body id="bodej">
 <button onclick="yes();" style="height: 512px; width: 512px;" id="viewbutton">View my IP address</button>
 <script>
   const windowheit = window.innerHeight - 22
@@ -16,11 +16,11 @@
     let askifyes = prompt('Are you sure you want to view your IP Address? (OK / Cancel)');
 
     if (askifyes === null) {
-        document.getElementsByName("body")[0].innerText = "Uživatel klikl na Zrušit.";
+        document.getElementById("bodej").innerText = "Uživatel klikl na Zrušit.";
     } else if (askifyes === "") {
-        document.getElementsByName("body")[0].innerText ="Uživatel nevyplnil nic a klikl na OK.";
+        document.getElementById("bodej").innerText ="Uživatel nevyplnil nic a klikl na OK.";
     } else {
-        document.getElementsByName("body")[0].innerText ="Uživatel zadal:", askifyes;
+        document.getElementById("bodej").innerText ="Uživatel zadal:", askifyes;
     }
     // if (askifyes == 'y') {
     //   yes();
