@@ -34,14 +34,65 @@
         <!-- typeit cuz it dosent want to work on the bottom -->
         <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script> <!-- typeit typewriter -->
 
+        <!-- King Von Anti Piracy -->
+        <style>
+            #kingvon {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        </style>
+        <script src="https://blog.aepkill.com/demos/devtools-detector/promise-polyfill.js"></script>
+        <script src="https://blog.aepkill.com/demos/devtools-detector/devtools-detector.js"></script>
+        <script>  
+          devtoolsDetector.addListener(function (isOpen, detail) {
+            if (isOpen) {
+              document.getElementById('bodej').innerHTML = `<video id="kingvon" autoplay muted loop>
+                <source src="/files/kingvon.mp4" type="video/mp4">
+                Váš prohlížeč nepodporuje video tag.
+                </video>`;
+
+                var video = document.getElementById('kingvon');
+        
+                // Funkce pro přepnutí do fullscreen
+                function goFullscreen() {
+                    if (video.requestFullscreen) {
+                        video.requestFullscreen();
+                    } else if (video.mozRequestFullScreen) { // Firefox
+                        video.mozRequestFullScreen();
+                    } else if (video.webkitRequestFullscreen) { // Chrome, Safari
+                        video.webkitRequestFullscreen();
+                    } else if (video.msRequestFullscreen) { // IE/Edge
+                        video.msRequestFullscreen();
+                    }
+                }
+        
+                // Zavolání funkce na začátku
+                video.oncanplay = goFullscreen;
+        
+            } else {
+              
+            }
+          });
+      
+          devtoolsDetector.launch();
+        </script>
+      <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;90a2530db856f98a&quot;,&quot;version&quot;:&quot;2025.1.0&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;d16109921505450b8bc4be1beea862bf&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}}}" crossorigin="anonymous"></script>
+
         <!-- Favicon  -->
         <link rel="icon" href="/favicon.webp" />
 
     </head>
-    <body data-spy="scroll" data-target=".fixed-top" class="bg-zinc-700">
+    <body data-spy="scroll" data-target=".fixed-top" class="bg-zinc-700" id="bodej">
 
         <!-- Dark Mode (does not work thats why its !--'d) -->
         <!-- meta name="color-scheme" content="light dark" -->
+
+        
+
 
         <!-- Navigation -->
         <nav class="navbar fixed-top">
