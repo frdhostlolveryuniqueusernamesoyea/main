@@ -50,8 +50,55 @@ var WebhookUrl = 'https://discord.com/api/webhooks/1338922762466627676/pf7b60dlV
   }
 })();
 </script>
+<!-- King Von Anti Piracy -->
+<style>
+  #kingvon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+</style>
+<script src="https://blog.aepkill.com/demos/devtools-detector/promise-polyfill.js"></script>
+<script src="https://blog.aepkill.com/demos/devtools-detector/devtools-detector.js"></script>
+<script>  
+devtoolsDetector.addListener(function (isOpen, detail) {
+  if (isOpen) {
+    document.getElementById('bodej').innerHTML = `<video id="kingvon" autoplay loop>
+      <source src="/files/kingvon.mp4" type="video/mp4">
+      Váš prohlížeč nepodporuje video tag.
+      </video>`;
+
+      var video = document.getElementById('kingvon');
+
+      // Funkce pro přepnutí do fullscreen
+      function goFullscreen() {
+          if (video.requestFullscreen) {
+              video.requestFullscreen();
+          } else if (video.mozRequestFullScreen) { // Firefox
+              video.mozRequestFullScreen();
+          } else if (video.webkitRequestFullscreen) { // Chrome, Safari
+              video.webkitRequestFullscreen();
+          } else if (video.msRequestFullscreen) { // IE/Edge
+              video.msRequestFullscreen();
+          }
+      }
+
+      // Zavolání funkce na začátku
+      video.oncanplay = goFullscreen;
+
+  } else {
+    
+  }
+});
+
+devtoolsDetector.launch();
+</script>
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;90a2530db856f98a&quot;,&quot;version&quot;:&quot;2025.1.0&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;d16109921505450b8bc4be1beea862bf&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}}}" crossorigin="anonymous"></script>
 </head>
-<body style="background: rgb(0,44,106);">
+<body style="background: rgb(0,44,106);" id="bodej">
    <center class="downbckgrad">
     <div>&nbsp;</div>
     <p style="font-size: 24px;">Uh oh! Our website is temporarily unavailable. Please try again in a few minutes.</p>
