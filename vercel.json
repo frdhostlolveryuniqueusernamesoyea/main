@@ -20,6 +20,7 @@
     { "src": "/dtss", "status": 200, "dest": "/pages/datetime.html" },
     { "src": "/opf", "status": 200, "dest": "/pages/onepoundfish.html" },
     { "src": "/mvc", "status": 200, "dest": "/pages/movecursor.html" },
+    { "src": "/apiworkdow", "status": 200, "dest": "/pages/apiworkdow.html" },
     { "src": "/(.*)", "status": 404, "dest": "/pages/404.html" }
   ]
 }
