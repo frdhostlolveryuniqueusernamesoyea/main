@@ -13,17 +13,14 @@
 </script>
 <script>
   function ask() {
-    let askifyes = prompt('Are you sure you want to view your IP Address? (OK / Cancel)');
+    let askifyes = confirm('Are you sure you want to view your IP Address? (OK / Cancel)');
 
-    if (askifyes === null) {
+    if (!askifyes) {
         // cancel
         cancelit();
-    } else if (askifyes === "") {
+    } else {
         // OK
         yes();
-    } else {
-        alert("Not an option.");
-        ask();
     }
     // if (askifyes == 'y') {
     //   yes();
