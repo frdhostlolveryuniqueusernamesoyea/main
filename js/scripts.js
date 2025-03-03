@@ -66,7 +66,7 @@ const navbar = `                <!-- Text Logo - Use this if you don't have a gr
                 </div> <!-- end of navbar-collapse -->`;
 
 
-document.getElementById('navbrae').INNER HTML = navbar;
+document.getElementById('navbrae').innerHTML = navbar;
 
 (function($) {
     "use strict"; 
