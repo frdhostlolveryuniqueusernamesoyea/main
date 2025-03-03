@@ -3,7 +3,7 @@
     fetch('https://frdomains.site/pages/warning.html')
       .then(response => response.text())
       .then(data => {
-        document.getElementById('warning').innerHTML = data;
+        //document.getElementById('warning').innerHTML = data;
       })
       .catch(error => {
         console.error('Error:', error);
