@@ -1438,7 +1438,7 @@ a:hover.back-to-top {
     opacity: 80%;
   }
   
-  .canvas-teampage {
+  .canvas {
     perspective: 800px;
     inset: 0;
     z-index: 200;
