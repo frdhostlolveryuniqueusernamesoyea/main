@@ -1396,7 +1396,7 @@ a:hover.back-to-top {
     color: white;
   }
   
-  .tracker:hover ~ #card-teampage .title {
+  .tracker:hover ~ #card-teampage .title-teampage {
     opacity: 1;
   }
   
