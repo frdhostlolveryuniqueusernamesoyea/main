@@ -10,29 +10,27 @@
     <ul id="fileList"></ul>
 
     <script>
-        // Function to fetch directory contents
-        function listDirectory() {
-            var path = window.location.pathname;
-            var directory = path.substring(0, path.lastIndexOf('/'));
-            
-            fetch(directory)
-            .then(response => response.text())
-            .then(text => {
-                var parser = new DOMParser();
-                var htmlDocument = parser.parseFromString(text, "text/html");
-                var links = htmlDocument.querySelectorAll('a[href]');
-                var fileList = document.getElementById('fileList');
-                
-                links.forEach(link => {
-                    var listItem = document.createElement('li');
-                    listItem.textContent = link.getAttribute('href');
+        async function listDirectory() {
+            try {
+                const response = await fetch("/api/list-imgs.js");
+                const data = await response.json();
+                const fileList = document.getElementById("fileList");
+
+                data.files.forEach(filename => {
+                    const listItem = document.createElement("li");
+                    const fileLink = document.createElement("a");
+                    fileLink.href = `/images/${filename}`;
+                    fileLink.textContent = filename;
+
+                    listItem.appendChild(fileLink);
                     fileList.appendChild(listItem);
                 });
-            })
-            .catch(error => console.error('Error fetching directory:', error));
+            } catch (error) {
+                console.error("Error fetching directory:", error);
+            }
         }
 
-        // Call the function when the page loads
+        // Load directory listing on page load
         window.onload = listDirectory;
     </script>
 </body>
