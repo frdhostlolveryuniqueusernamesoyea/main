@@ -1438,7 +1438,7 @@ a:hover.back-to-top {
     opacity: 80%;
   }
   
-  .canvas {
+  .canvas-teampage {
     perspective: 800px;
     inset: 0;
     z-index: 200;
@@ -1566,132 +1566,132 @@ a:hover.back-to-top {
     grid-area: tr-25;
   }
   
-  .tr-1:hover ~ #card {
+  .tr-1:hover ~ #card-teampage {
     transition: 125ms ease-in-out;
     transform: rotateX(20deg) rotateY(-10deg) rotateZ(0deg);
   }
   
-  .tr-2:hover ~ #card {
+  .tr-2:hover ~ #card-teampage {
     transition: 125ms ease-in-out;
     transform: rotateX(20deg) rotateY(-5deg) rotateZ(0deg);
   }
   
-  .tr-3:hover ~ #card {
+  .tr-3:hover ~ #card-teampage {
     transition: 125ms ease-in-out;
     transform: rotateX(20deg) rotateY(0deg) rotateZ(0deg);
   }
   
-  .tr-4:hover ~ #card {
+  .tr-4:hover ~ #card-teampage {
     transition: 125ms ease-in-out;
     transform: rotateX(20deg) rotateY(5deg) rotateZ(0deg);
   }
   
-  .tr-5:hover ~ #card {
+  .tr-5:hover ~ #card-teampage {
     transition: 125ms ease-in-out;
     transform: rotateX(20deg) rotateY(10deg) rotateZ(0deg);
   }
   
-  .tr-6:hover ~ #card {
+  .tr-6:hover ~ #card-teampage {
     transition: 125ms ease-in-out;
     transform: rotateX(10deg) rotateY(-10deg) rotateZ(0deg);
   }
   
-  .tr-7:hover ~ #card {
+  .tr-7:hover ~ #card-teampage {
     transition: 125ms ease-in-out;
     transform: rotateX(10deg) rotateY(-5deg) rotateZ(0deg);
   }
   
-  .tr-8:hover ~ #card {
+  .tr-8:hover ~ #card-teampage {
     transition: 125ms ease-in-out;
     transform: rotateX(10deg) rotateY(0deg) rotateZ(0deg);
   }
   
-  .tr-9:hover ~ #card {
+  .tr-9:hover ~ #card-teampage {
     transition: 125ms ease-in-out;
     transform: rotateX(10deg) rotateY(5deg) rotateZ(0deg);
   }
   
-  .tr-10:hover ~ #card {
+  .tr-10:hover ~ #card-teampage {
     transition: 125ms ease-in-out;
     transform: rotateX(10deg) rotateY(10deg) rotateZ(0deg);
   }
   
-  .tr-11:hover ~ #card {
+  .tr-11:hover ~ #card-teampage {
     transition: 125ms ease-in-out;
     transform: rotateX(0deg) rotateY(-10deg) rotateZ(0deg);
   }
   
-  .tr-12:hover ~ #card {
+  .tr-12:hover ~ #card-teampage {
     transition: 125ms ease-in-out;
     transform: rotateX(0deg) rotateY(-5deg) rotateZ(0deg);
   }
   
-  .tr-13:hover ~ #card {
+  .tr-13:hover ~ #card-teampage {
     transition: 125ms ease-in-out;
     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
   }
   
-  .tr-14:hover ~ #card {
+  .tr-14:hover ~ #card-teampage {
     transition: 125ms ease-in-out;
     transform: rotateX(0deg) rotateY(5deg) rotateZ(0deg);
   }
   
-  .tr-15:hover ~ #card {
+  .tr-15:hover ~ #card-teampage {
     transition: 125ms ease-in-out;
     transform: rotateX(0deg) rotateY(10deg) rotateZ(0deg);
   }
   
-  .tr-16:hover ~ #card {
+  .tr-16:hover ~ #card-teampage {
     transition: 125ms ease-in-out;
     transform: rotateX(-10deg) rotateY(-10deg) rotateZ(0deg);
   }
   
-  .tr-17:hover ~ #card {
+  .tr-17:hover ~ #card-teampage {
     transition: 125ms ease-in-out;
     transform: rotateX(-10deg) rotateY(-5deg) rotateZ(0deg);
   }
   
-  .tr-18:hover ~ #card {
+  .tr-18:hover ~ #card-teampage {
     transition: 125ms ease-in-out;
     transform: rotateX(-10deg) rotateY(0deg) rotateZ(0deg);
   }
   
-  .tr-19:hover ~ #card {
+  .tr-19:hover ~ #card-teampage {
     transition: 125ms ease-in-out;
     transform: rotateX(-10deg) rotateY(5deg) rotateZ(0deg);
   }
   
-  .tr-20:hover ~ #card {
+  .tr-20:hover ~ #card-teampage {
     transition: 125ms ease-in-out;
     transform: rotateX(-10deg) rotateY(10deg) rotateZ(0deg);
   }
   
-  .tr-21:hover ~ #card {
+  .tr-21:hover ~ #card-teampage {
     transition: 125ms ease-in-out;
     transform: rotateX(-20deg) rotateY(-10deg) rotateZ(0deg);
   }
   
-  .tr-22:hover ~ #card {
+  .tr-22:hover ~ #card-teampage {
     transition: 125ms ease-in-out;
     transform: rotateX(-20deg) rotateY(-5deg) rotateZ(0deg);
   }
   
-  .tr-23:hover ~ #card {
+  .tr-23:hover ~ #card-teampage {
     transition: 125ms ease-in-out;
     transform: rotateX(-20deg) rotateY(0deg) rotateZ(0deg);
   }
   
-  .tr-24:hover ~ #card {
+  .tr-24:hover ~ #card-teampage {
     transition: 125ms ease-in-out;
     transform: rotateX(-20deg) rotateY(5deg) rotateZ(0deg);
   }
   
-  .tr-25:hover ~ #card {
+  .tr-25:hover ~ #card-teampage {
     transition: 125ms ease-in-out;
     transform: rotateX(-20deg) rotateY(10deg) rotateZ(0deg);
   }
   
-  .noselect {
+  .noselect-teampage {
     -webkit-touch-callout: none;
      /* iOS Safari */
     -webkit-user-select: none;
