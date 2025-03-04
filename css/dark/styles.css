@@ -1465,9 +1465,13 @@ a:hover.back-to-top {
     transition: 200ms;
   }
 
-  .kubaligrad {
+  .kubali-grad {
     background: linear-gradient(43deg, rgb(17, 80, 113) 0%, rgb(52, 96, 107) 46%, rgb(26, 27, 47) 100%);
     /*  */
+  }
+
+  .mrtomi-grad {
+    background: linear-gradient(43deg, rgb(1, 109, 230) 0%, rgb(9, 143, 217) 46%, rgb(18, 183, 230) 76%, rgb(64, 64, 65) 81%, rgb(0, 0, 0) 100%);
   }
   
   .tr-1 {
