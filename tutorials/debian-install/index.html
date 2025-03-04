@@ -1,92 +1,154 @@
 <!DOCTYPE html>
-<link rel="icon" type="image/x-icon" href="/favicon.webp">
-<meta name="color-scheme" content="light dark">
-<style>
-    p {
-        font-family: Arial, sans-serif;
-    }
-</style>
-<title>How to install Debian 12 | FrDomains</title>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- SEO Meta Tags -->
+        <meta name="description" content="FrDomains is a service that offers free subdomains" />
+        <meta name="author" content="MrTomiCZ, kubali" />
+        <meta name="application-name" content="FrDomains">
 
-<p><strong>1: Downloading</strong></p>
-<p>To install Debian, you will need to have an ISO file and flash it onto a drive (USB Drive, Flash Drive).</p>
-<p>You can choose different flavors of Debian, (Ubuntu, Pop!_OS, Linux Mint, RPI OS) but in this tutorial we will install Debian itself.</p>
-<p>Download the Debian ISO <a target="_blank" rel="noopener noreferrer" href="https://debian.org/">here.</a></p>
-<p>If you want to install a different Debian-based system, we have a list of downloads to those&nbsp;<a target="_blank" rel="noopener noreferrer" href="/tutorials/debian-install/distros">here.</a></p>
-<p><strong>2: Flashing it onto a drive</strong></p>
-<p>Now, locate the ISO file you downloaded earlier. Now, open&nbsp;<a target="_blank" rel="noopener noreferrer" href="https://rufus.ie">rufus.ie</a>&nbsp;and download Rufus.</p>
-<p>After that, open rufus. You will have a list of options.</p>
-<p><img src="/tutorials/debian-install/images/rufus.png" alt="rufus" width="324" height="368"></p>
-<p>Select the ISO image and your USB Drive and click Start.</p>
-<p><strong>3: Booting</strong></p>
-<p>After flashing, you'll need to boot from the USB.</p>
-<p>Each Motherboard manufacturer has its own key for the boot menu.</p>
-<p>You can search for your motherboard manufacturer's boot menu key on Google. We will put here a list of keys.</p>
-<p>Dell: F12</p>
-<p>HP: ESC</p>
-<p>ASUS (and a lot of other brands): Delete</p>
-<p><strong>4: Installing</strong></p>
-<p>Install Debian by using arrow keys and&nbsp;highlighting Install and clicking enter.</p>
-<p><img class="image_resized" src="/tutorials/debian-install/images/install.png" alt="install"></p>
-<p>Select your language and location.</p>
-<p><img class="image_resized" src="/tutorials/debian-install/images/lang.png" alt="lang"></p>
-<p>Select your keyboard layout.</p>
-<p><img class="image_resized" src="/tutorials/debian-install/images/layout.png" alt="layout"></p>
-<p>Choose your hostname. (that will appear in the router settings and in the terminal (username@hostname:~ $))</p>
-<p><img class="image_resized" src="/tutorials/debian-install/images/hostname.png"></p>
-<p>On the domain name, just press enter.</p>
-<p>On root password, press enter too.</p>
-<p>Enter a name for the new user and press enter. That will appear on the login screen.</p>
-<p><img src="/tutorials/debian-install/images/name.png"></p>
-<p>Now, enter the username for the new user. You can put the same, but with small letters. That will appear as username@hostname:~ $ in the terminal.</p>
-<p>Choose a password for your user account.</p>
-<p>Select your time zone.</p>
-<p>If you want to use the entire disk, choose Guided - use entire disk (as the name says :D)</p>
-<p>Select your disk and All files in one partition. Finish partitioning and write changes to disk. Choose Yes. Now you wait, this shouldn't take long.</p>
-<p>If the package manager asks if you want to install something from the USB, say no.</p>
-<p>Choose your country again. (the download servers for the package manager)</p>
-<p>Leave the proxy blank. (if you don't have one)</p>
-<p>Wait again.</p>
-<p>Now, say no to not send the data with the most used packages on the system.</p>
-<p>Now, choose the Apps you want to install. If you want to use your Debian system personally, use this configuration:</p>
-<p><img class="image_resized" src="/tutorials/debian-install/images/personalconf.png"></p>
-<p>CasaOS:</p>
-<p><img class="image_resized" src="/tutorials/debian-install/images/casaos.png"></p>
-<p>Select by &lt;Space&gt;. Press continue when you're done.</p>
-<p>Wait again.</p>
-<p>Say yes to install GRUB. Select the drive.</p>
-<p>After it's done installing, unplug the USB and press enter to reboot.</p>
-<h1>Congrats! You successfully installed Debian!</h1>
-<p><a href="/tutorials/casaos-install">Install CasaOS here.</a></p>
+        <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+        <meta property="og:site_name" content="FrDomains" /> <!-- website name -->
+        <meta property="og:site" content="frdomains.site" /> <!-- website link -->
+        <meta property="og:title" content="FrDomains Tutorials" /> <!-- title shown in the actual shared post -->
+        <meta property="og:description" content="FrDomains is a service that offers free subdomains &amp; free email addresses" /> <!-- description shown in the actual shared post -->
+        <meta property="og:image" content="/logo.jpg" /> <!-- image link, make sure it's jpg -->
+        <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+        <meta name="twitter:card" content="summary_large_image" /> <!-- to have large image post format in Twitter -->
+
+        <!-- Webpage Title -->
+        <title>How to install Debian 12 | FrDomains</title>
+
+        <!-- Styles -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+        <link href="/css/fontawesome-all.css" rel="stylesheet" />
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+        <link href="/css/swiper.css" rel="stylesheet" />
+        <link href="/css/magnific-popup.css" rel="stylesheet" />
+        <link href="/css/dark/styles.css" rel="stylesheet" />
+
+        <!-- Favicon  -->
+        <link rel="icon" href="/favicon.webp" />
+
+        <style>
+            p {
+                font-family: Arial, sans-serif;
+            }
+
+            code {
+                display: inline;
+                font-family: monospace;
+            }
+        </style>
+    </head>
+    <body data-spy="scroll" data-target=".fixed-top" class="bg-zinc-700">
+
+        <!-- Dark Mode (does not work thats why its !--'d) -->
+        <!-- meta name="color-scheme" content="light dark" -->
+        
+
+        <!-- Navigation -->
+        <nav class="navbar fixed-top">
+            <div class="container sm:px-4 lg:px-8 flex flex-wrap items-center justify-between lg:flex-nowrap" id="navbrae">
+                
+            </div> <!-- end of container -->
+        </nav> <!-- end of navbar -->
+        <!-- end of navigation -->
+
+        <!-- Header -->
+        <header id="header" class="header py-28 text-center md:pt-36 lg:text-left xl:pt-44 xl:pb-32">
+            <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-2 lg:gap-x-8">
+                <div class="mb-16 lg:mt-32 xl:mt-40 xl:mr-12">
+                    <h1 class="h1-large mb-5">Tutorials</h1>
+                    <p class="p-large mb-8">it will probably never be used, <strong>but why not have it here</strong></p>
+                </div>
+                <div class="xl:text-right">
+                    <img class="inline" src="/favicon.webp" alt="domain-logo" />
+                </div>
+            </div> <!-- end of container -->
+        </header> <!-- end of header -->
+        <!-- end of header -->
+
+        
+        <div id="debian-tuto" class="bg-blue-950 rounded-lg shadow-2xl items-center text-center">
+            <p><strong>1: Downloading</strong></p>
+            <p>To install Debian, you will need to have an ISO file and flash it onto a drive (USB Drive, Flash Drive).</p>
+            <p>You can choose different flavors of Debian, (Ubuntu, Pop!_OS, Linux Mint, RPI OS) but in this tutorial we will install Debian itself.</p>
+            <p>Download the Debian ISO <a target="_blank" rel="noopener noreferrer" href="https://debian.org/">here.</a></p>
+            <p>If you want to install a different Debian-based system, we have a list of downloads to those&nbsp;<a target="_blank" rel="noopener noreferrer" href="/tutorials/debian-install/distros">here.</a></p>
+            <p><strong>2: Flashing it onto a drive</strong></p>
+            <p>Now, locate the ISO file you downloaded earlier. Now, open&nbsp;<a target="_blank" rel="noopener noreferrer" href="https://rufus.ie">rufus.ie</a>&nbsp;and download Rufus.</p>
+            <p>After that, open rufus. You will have a list of options.</p>
+            <p><img src="/tutorials/debian-install/images/rufus.png" alt="rufus" width="324" height="368"></p>
+            <p>Select the ISO image and your USB Drive and click Start.</p>
+            <p><strong>3: Booting</strong></p>
+            <p>After flashing, you'll need to boot from the USB.</p>
+            <p>Each Motherboard manufacturer has its own key for the boot menu.</p>
+            <p>You can search for your motherboard manufacturer's boot menu key on Google. We will put here a list of keys.</p>
+            <p>Dell: F12</p>
+            <p>HP: ESC</p>
+            <p>ASUS (and a lot of other brands): Delete</p>
+            <p><strong>4: Installing</strong></p>
+            <p>Install Debian by using arrow keys and&nbsp;highlighting Install and clicking enter.</p>
+            <p><img class="image_resized" src="/tutorials/debian-install/images/install.png" alt="install"></p>
+            <p>Select your language and location.</p>
+            <p><img class="image_resized" src="/tutorials/debian-install/images/lang.png" alt="lang"></p>
+            <p>Select your keyboard layout.</p>
+            <p><img class="image_resized" src="/tutorials/debian-install/images/layout.png" alt="layout"></p>
+            <p>Choose your hostname. (that will appear in the router settings and in the terminal (username@hostname:~ $))</p>
+            <p><img class="image_resized" src="/tutorials/debian-install/images/hostname.png"></p>
+            <p>On the domain name, just press enter.</p>
+            <p>On root password, press enter too.</p>
+            <p>Enter a name for the new user and press enter. That will appear on the login screen.</p>
+            <p><img src="/tutorials/debian-install/images/name.png"></p>
+            <p>Now, enter the username for the new user. You can put the same, but with small letters. That will appear as username@hostname:~ $ in the terminal.</p>
+            <p>Choose a password for your user account.</p>
+            <p>Select your time zone.</p>
+            <p>If you want to use the entire disk, choose Guided - use entire disk (as the name says :D)</p>
+            <p>Select your disk and All files in one partition. Finish partitioning and write changes to disk. Choose Yes. Now you wait, this shouldn't take long.</p>
+            <p>If the package manager asks if you want to install something from the USB, say no.</p>
+            <p>Choose your country again. (the download servers for the package manager)</p>
+            <p>Leave the proxy blank. (if you don't have one)</p>
+            <p>Wait again.</p>
+            <p>Now, say no to not send the data with the most used packages on the system.</p>
+            <p>Now, choose the Apps you want to install. If you want to use your Debian system personally, use this configuration:</p>
+            <p><img class="image_resized" src="/tutorials/debian-install/images/personalconf.png"></p>
+            <p>CasaOS:</p>
+            <p><img class="image_resized" src="/tutorials/debian-install/images/casaos.png"></p>
+            <p>Select by &lt;Space&gt;. Press continue when you're done.</p>
+            <p>Wait again.</p>
+            <p>Say yes to install GRUB. Select the drive.</p>
+            <p>After it's done installing, unplug the USB and press enter to reboot.</p>
+            <h1>Congrats! You successfully installed Debian!</h1>
+            <p><a href="/tutorials/casaos-install">Install CasaOS here.</a></p>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-3">
+                <ul class="mb-4 list-unstyled p-small">
+                    <li class="mb-2"><a href="/tutorials">Tutorials</a></li>
+                    <li class="mb-2"><a href="/privacy">Privacy Policy</a></li>
+                    <li class="mb-2"><a href="/team">Team</a></li>
+                </ul>
+
+                <p class="pb-2 p-small statement">Made by <a href="https://mrtomicz.ddns.net/">MrTomiCZ</a>, kubali and <!--a href="https://jpman.eu/"-->JPmanOF<!--/a--></p><p class="pb-2 p-small statement" id="copyright"></p>
+            </div> 
+
+        <!-- end of container -->
+        </div> <!-- end of copyright -->
+        <!-- end of copyright -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     
+        <!-- Scripts -->
+        <script src="/js/jquery.min.js"></script> <!-- jQuery for JavaScript plugins -->
+        <script src="/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+        <script src="/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+        <script src="/js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+        <script src="/js/scripts.js"></script> <!-- Custom scripts -->
+        <script src="js/variables.js"></script> <!-- variables -->
+    </body>
+</html>
