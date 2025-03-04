@@ -1427,7 +1427,7 @@ a:hover.back-to-top {
     opacity: 0;
   }
   
-  .tracker:hover ~ #card {
+  .tracker:hover ~ #card-teampage {
     transition: 300ms;
     filter: brightness(1.1);
   }
