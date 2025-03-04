@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory Listing</title>
+</head>
+<body>
+    <h1>Directory Listing</h1>
+    <ul id="fileList"></ul>
+
+    <script>
+        // Function to fetch directory contents
+        function listDirectory() {
+            var path = window.location.pathname;
+            var directory = path.substring(0, path.lastIndexOf('/'));
+            
+            fetch(directory)
+            .then(response => response.text())
+            .then(text => {
+                var parser = new DOMParser();
+                var htmlDocument = parser.parseFromString(text, "text/html");
+                var links = htmlDocument.querySelectorAll('a[href]');
+                var fileList = document.getElementById('fileList');
+                
+                links.forEach(link => {
+                    var listItem = document.createElement('li');
+                    listItem.textContent = link.getAttribute('href');
+                    fileList.appendChild(listItem);
+                });
+            })
+            .catch(error => console.error('Error fetching directory:', error));
+        }
+
+        // Call the function when the page loads
+        window.onload = listDirectory;
+    </script>
+</body>
+</html>
