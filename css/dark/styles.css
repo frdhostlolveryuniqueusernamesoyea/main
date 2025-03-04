@@ -1456,7 +1456,6 @@ a:hover.back-to-top {
   
   #card-teampage::before {
     content: '';
-    background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
     filter: blur(2rem);
     opacity: 30%;
     width: 100%;
@@ -1464,6 +1463,11 @@ a:hover.back-to-top {
     position: absolute;
     z-index: -1;
     transition: 200ms;
+  }
+
+  .kubaligrad {
+    background: linear-gradient(43deg, rgb(17, 80, 113) 0%, rgb(52, 96, 107) 46%, rgb(26, 27, 47) 100%);
+    /*  */
   }
   
   .tr-1 {
