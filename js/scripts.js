@@ -255,6 +255,4 @@ document.getElementById('navbrae').innerHTML = navbar;
 			}  
 		});
 	}
-	
-
-
+})
