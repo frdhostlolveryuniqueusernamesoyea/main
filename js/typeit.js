@@ -100,6 +100,7 @@ new TypeIt("#subdomain", {
     .type("@")
     .pause(100)
     .move(+18, { delay: 100 })
+	.pause(5000)
 	// .delete(1)
     // .pause(10)
 	// .delete(1)
