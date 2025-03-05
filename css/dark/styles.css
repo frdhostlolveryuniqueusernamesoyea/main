@@ -1467,11 +1467,14 @@ a:hover.back-to-top {
 
   .kubali-grad {
     background: linear-gradient(43deg, rgb(52, 96, 107) 0%, rgb(17, 80, 113) 46%, rgb(26, 27, 47) 100%);
-    /*  */
   }
 
   .mrtomi-grad {
     background: linear-gradient(43deg, rgb(1, 109, 230) 0%, rgb(9, 143, 217) 46%, rgb(18, 183, 230) 76%);
+  }
+
+  .jpmanek-grad {
+    background: linear-gradient(43deg, rgb(129, 205, 255) 0%, rgb(79, 100, 184) 46%, rgb(104, 75, 221) 76%, rgb(29, 0, 114) 100%);
   }
   
   .tr-1 {
