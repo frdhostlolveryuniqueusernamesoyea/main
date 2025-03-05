@@ -1484,6 +1484,10 @@ a:hover.back-to-top {
   .filip-grad {
     background: linear-gradient(43deg, rgb(100, 141, 141) 0%, rgb(141, 180, 186) 46%, rgb(209, 239, 237) 100%);
   }
+
+  .carl-grad {
+    background: linear-gradient(43deg, rgb(37, 32, 29) 0%, rgb(67, 65, 64) 46%, rgb(214, 200, 186) 100%);
+  }
   
   .tr-1 {
     grid-area: tr-1;
