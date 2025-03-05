@@ -1488,6 +1488,10 @@ a:hover.back-to-top {
   .carl-grad {
     background: linear-gradient(43deg, rgb(37, 32, 29) 0%, rgb(67, 65, 64) 34%, rgb(214, 200, 186) 46%, rgb(114, 49, 57) 68%);
   }
+
+  .ednu-grad {
+    background: linear-gradient(43deg, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 100%);
+  }
   
   .tr-1 {
     grid-area: tr-1;
