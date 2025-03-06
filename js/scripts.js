@@ -189,4 +189,16 @@
 			}  
 		});
 	}
+
+	function openCenteredWindow(url, title, width, height) {
+		const screenWidth = window.screen.width;
+		const screenHeight = window.screen.height;
+	
+		const left = (screenWidth - width) / 2;
+		const top = (screenHeight - height) / 2;
+	
+		const features = `width=${width},height=${height},top=${top},left=${left},resizable=yes,scrollbars=yes`;
+	
+		window.open(url, title, features);
+	}
 })(jQuery);
