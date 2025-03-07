@@ -191,7 +191,7 @@
 	}
 })(jQuery);
 
-function openCenteredWindow(url, title = "Contact Window | FrDomains", width = "500", height = "500") {
+function openCenteredWindow(url, title = "Contact Window | FrDomains", width = "500", height = "700") {
     const screenWidth = window.screen.width;
     const screenHeight = window.screen.height;
 
