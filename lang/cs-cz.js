@@ -1,1 +1,1 @@
-document.getElementById('bodej').innerText = "cestina";
+document.getElementById('getfreesubdomain').innerText = "Získej zdarma subdoménu s (brzy) plným přístupem";

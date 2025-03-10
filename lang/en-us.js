@@ -1,1 +1,0 @@
-document.getElementById('bodej').innerText = "anglish";
