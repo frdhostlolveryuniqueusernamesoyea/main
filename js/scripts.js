@@ -202,9 +202,3 @@ function openCenteredWindow(url, title = "Contact Window | FrDomains", width = "
 
     window.open(url, title, features);
 }
-
-
-// language pack
-const langpack_name = document.getElementById('langpackbox').value;
-//const langpack = fetch('/lang/' + langpack_name);
-document.getElementById('bodej').innerText = langpack_name;
