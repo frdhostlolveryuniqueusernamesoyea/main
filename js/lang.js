@@ -11,7 +11,7 @@ async function loadLang(lang) {
 }
 
 const sysLang = navigator.language || navigator.userLanguage;
-if (sysLang.toLowerCase() === "cs-cz") {
+if (sysLang.toLowerCase() === "cs") {
     loadLang("cs-cz");
 } else {
     document.getElementById('bodej').innerText = sysLang.toLowerCase();
