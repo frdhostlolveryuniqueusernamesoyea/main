@@ -14,6 +14,7 @@ const sysLang = navigator.language || navigator.userLanguage;
 if (sysLang.toLowerCase() === "cs-cz") {
     loadLang("cs-cz");
 } else {
+    console.log(sysLang.toLowerCase());
     loadLang("en-us");
 }
 
