@@ -11,7 +11,7 @@ const navbar = `                <!-- Text Logo - Use this if you don't have a gr
                     <span class="navbar-toggler-icon inline-block w-8 h-8 align-middle"></span>
                 </button>
 
-                <select id="langpackbox">
+                <select id="langpackbox" onchange="javascript:changeLang()">
                     <option value="en-us">en-us</option>
                     <option value="cs-cz">cs-cz</option>
                 </select>
