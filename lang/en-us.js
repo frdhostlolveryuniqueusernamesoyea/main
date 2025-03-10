@@ -1,0 +1,1 @@
+document.getElementById('getfreesubdomain').innerText = "Get a free subdomain with (soon) full access";
