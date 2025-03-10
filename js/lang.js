@@ -10,9 +10,14 @@ async function loadLang(lang) {
     }
 }
 
+async function setLang(lang) {
+    document.getElementById('langpackbox').value = lang;
+}
+
 const sysLang = navigator.language || navigator.userLanguage;
 if (sysLang.toLowerCase() === "cs") {
     loadLang("cs-cz");
+    setLang("cs");
 } else {
     
 }
