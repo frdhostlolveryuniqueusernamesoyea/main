@@ -6,3 +6,5 @@ document.getElementById('subdomainsorderd').innerText = "Objednáno subdomén";
 document.getElementById('subdomainsplas').innerText = "Z toho prémiových";
 document.getElementById('pricingmaintext').innerText = "Plány";
 document.getElementById('pricingsubtext').innerText = "Plas je levné že?";
+document.getElementById('semesterplas').innerText = "Každý semestr";
+document.getElementById('halfyearplas').innerText = "(půl roku)";

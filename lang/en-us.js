@@ -6,3 +6,5 @@ document.getElementById('subdomainsorderd').innerText = "Subdomains ordered";
 document.getElementById('subdomainsplas').innerText = "Of which Plas";
 document.getElementById('pricingmaintext').innerText = "Pricing";
 document.getElementById('pricingsubtext').innerText = "Plas is cheap right?";
+document.getElementById('semesterplas').innerText = "every semester";
+document.getElementById('halfyearplas').innerText = "(half a year)";
