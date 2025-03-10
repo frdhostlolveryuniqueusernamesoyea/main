@@ -11,4 +11,7 @@ document.getElementById('pricingsubtext').innerText = "Plas je levné že?";
 document.getElementById('semesterplas').innerText = "Každý semestr";
 document.getElementById('halfyearplas').innerText = "(půl roku)";
 document.getElementById('plas-subtext').innerText = "někdy také označováno jako frdomains plus nebo premium";
-//document.getElementById('plas-text1-').innerText = "";
+
+document.getElementById('plas-text-1').innerText = "Několik E-Mail adres";
+document.getElementById('plas-text-2').innerText = "Několik subdomén";
+document.getElementById('plas-text-moredomains').innerText = "+ víc domén na výběr (zatím žádné)";

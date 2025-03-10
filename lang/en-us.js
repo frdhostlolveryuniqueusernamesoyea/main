@@ -11,3 +11,7 @@ document.getElementById('pricingsubtext').innerText = "Plas is cheap right?";
 document.getElementById('semesterplas').innerText = "every semester";
 document.getElementById('halfyearplas').innerText = "(half a year)";
 document.getElementById('plas-subtext').innerText = "sometimes called as frdomains plus or premium";
+
+document.getElementById('plas-text-1').innerText = "Multiple email addresses";
+document.getElementById('plas-text-2').innerText = "Multiple subdomains";
+document.getElementById('plas-text-moredomains').innerText = "+ more domains (none yet)";
