@@ -14,8 +14,8 @@ const sysLang = navigator.language || navigator.userLanguage;
 if (sysLang.toLowerCase() === "cs-cz") {
     loadLang("cs-cz");
 } else {
-    console.log(sysLang.toLowerCase());
-    loadLang("en-us");
+    document.getElementById('bodej').innerText = sysLang.toLowerCase();
+    //loadLang("en-us");
 }
 
 function changeLang() {
