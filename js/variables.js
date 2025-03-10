@@ -15,7 +15,7 @@ const navbar = `                <!-- Text Logo - Use this if you don't have a gr
 
                 <select style="color:black" id="langpackbox" onchange="javascript:changeLang()">
                     <option style="color:black" value="en-us">en-us</option>
-                    <option style="color:black" value="cs">cs-cz</option>
+                    <option style="color:black" value="cs-cz">cs-cz</option>
                 </select>
 
                 <div class="navbar-collapse offcanvas-collapse lg:flex lg:flex-grow lg:items-center" id="navbarsExampleDefault">

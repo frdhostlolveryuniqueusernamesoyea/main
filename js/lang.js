@@ -17,7 +17,7 @@ async function setLang(lang) {
 const sysLang = navigator.language || navigator.userLanguage;
 if (sysLang.toLowerCase() === "cs") {
     loadLang("cs-cz");
-    setLang("cs");
+    setLang("cs-cz");
 } else {
     
 }
