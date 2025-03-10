@@ -1,21 +1,23 @@
-const langpack_name = document.getElementById('langpackbox').value;
+let langpack_name = document.getElementById('langpackbox').value;
 
-const sysLang = navigator.language || navigator.userLanguage;
-if (sysLang.toLowerCase() == "en-us") {
-    const langpack = fetch('/lang/en-us.lang');
-    eval(langpack);
-} else if (sysLang.toLowerCase() == "cs-cz") {
-    const langpack = fetch('/lang/cs-cz.lang');
-    eval(langpack);
-} else {
-    const langpack = fetch('/lang/en-us.lang');
-    eval(langpack);
+async function loadLang(lang) {
+    try {
+        const response = await fetch('/lang/' + lang + ".js");
+        const langData = await response.text();
+        eval(langData);
+    } catch (error) {
+        console.error("Error loading language pack:", error);
+    }
 }
 
+const sysLang = navigator.language || navigator.userLanguage;
+if (sysLang.toLowerCase() === "cs-cz") {
+    loadLang("cs-cz");
+} else {
+    loadLang("en-us");
+}
 
 function changeLang() {
     langpack_name = document.getElementById('langpackbox').value;
-    const langpack = fetch('/lang/' + langpack_name + ".lang");
-    eval(langpack);
+    loadLang(langpack_name);
 }
-//document.getElementById('bodej').innerText = langpack_name;
