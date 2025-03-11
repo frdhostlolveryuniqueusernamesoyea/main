@@ -32,3 +32,5 @@ document.getElementById('server-text').innerText = "Game server hosting pro Mine
 
 
 document.getElementById('gettext').innerHTML = 'Pro získání, připoj se na náš <u><a href="/discord">Discord</a></u>, nebo nám pošli email na <u><a href="mailto:get@frdomains.site">get@frdomains.site</a></u>';
+
+document.getElementById('contacttext').innerHTML = 'FrDomains je tým tří lidí a můžeš nás kontaktovat na <a class="text-indigo-600 hover:text-gray-500" href="mailto:contact@frdomains.site">contact@frdomains.site</a>';
