@@ -59,4 +59,6 @@ try {
 document.getElementById('mrtomititle').innerText = "Founder and Developer";
 document.getElementById('kubalititle').innerText = "Founder";
 document.getElementById('jpmanektitle').innerText = "Head Developer (sometimes active - API developer)";
+document.getElementById('kotaktitle').innerText = "Developer (sometimes active)";
+document.getElementById('filiptitle').innerText = "Developer (inactive)";
 } catch {}
