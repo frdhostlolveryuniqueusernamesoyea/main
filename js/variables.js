@@ -2,10 +2,10 @@ const navbar = `                <!-- Text Logo - Use this if you don't have a gr
                 <!-- <a class="text-gray-800 font-semibold text-3xl leading-4 no-underline page-scroll" href="index.html">Pavo</a> -->
 
                 <!-- Image Logo -->
-                <a class="inline-block mr-4 py-0.5 text-xl whitespace-nowrap hover:no-underline focus:no-underline" href="index.html">
+                <a class="inline-block mr-4 py-0.5 text-xl whitespace-nowrap hover:no-underline focus:no-underline" href="/index.html">
                     <img src="/favicontp.png" alt="alternative" class="h-15" width="40" height="40"/>
                 </a>
-                <a class="text-white-800 font-semibold text-1xl leading-4 no-underline page-scroll" href="index.html">(features may change)</a>
+                <a class="text-white-800 font-semibold text-1xl leading-4 no-underline page-scroll" href="/index.html">(features may change)</a>
 
                 <button class="background-transparent rounded text-xl leading-none hover:no-underline focus:no-underline lg:hidden lg:text-gray-400" type="button" data-toggle="offcanvas">
                     <span class="navbar-toggler-icon inline-block w-8 h-8 align-middle"></span>
