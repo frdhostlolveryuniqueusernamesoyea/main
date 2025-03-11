@@ -18,6 +18,8 @@ document.getElementById('plas-text-1').innerText = "Multiple email addresses";
 document.getElementById('plas-text-2').innerText = "Multiple subdomains";
 document.getElementById('plas-text-moredomains').innerText = "+ more domains (none yet)";
 
+document.getElementById('getstandard').innerText = "Get";
+document.getElementById('anythinstandard').innerText = "anything";
 document.getElementById('lifetimestandard').innerText = "lifetime";
 document.getElementById('standard-subtext').innerText = "frdomains free - pretty much everything thats in plas but a little less";
 document.getElementById('standard-text-1').innerText = "Multiple email addresses";

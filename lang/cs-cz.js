@@ -18,6 +18,8 @@ document.getElementById('plas-text-1').innerText = "Několik E-Mail adres";
 document.getElementById('plas-text-2').innerText = "Několik subdomén";
 document.getElementById('plas-text-moredomains').innerText = "+ víc domén na výběr (zatím žádné)";
 
+document.getElementById('getstandard').innerText = "Získat";
+document.getElementById('anythinstandard').innerText = "cokoliv";
 document.getElementById('lifetimestandard').innerText = "nadoživotí";
 document.getElementById('standard-subtext').innerText = "frdomains zadara verze - asi všechno co je v plas ale trochu méně";
 document.getElementById('standard-text-1').innerText = "Několik E-Mail adres";
