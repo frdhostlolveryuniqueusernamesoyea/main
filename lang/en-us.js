@@ -64,3 +64,9 @@ document.getElementById('jpmanektitle').innerText = "Head Developer (sometimes a
 document.getElementById('kotaktitle').innerText = "Developer (sometimes active)";
 document.getElementById('filiptitle').innerText = "Developer (inactive)";
 } catch {}
+
+// TUTORIALS
+try {
+document.getElementById('tutorials-maintext').innerText = "Tutorials";
+document.getElementById('subtext-tutorials').innerText = "it will probably never be used, but why not have it here";
+} catch {}
