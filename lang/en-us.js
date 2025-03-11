@@ -68,5 +68,5 @@ document.getElementById('filiptitle').innerText = "Developer (inactive)";
 // TUTORIALS
 try {
 document.getElementById('tutorials-maintext').innerText = "Tutorials";
-document.getElementById('subtext-tutorials').innerText = "it will probably never be used, but why not have it here";
+document.getElementById('tutorials-subtext').innerText = "it will probably never be used, but why not have it here";
 } catch {}

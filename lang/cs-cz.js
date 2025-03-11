@@ -68,5 +68,5 @@ document.getElementById('filiptitle').innerText = "Vývojář (neaktivní)";
 // TUTORIALS
 try {
 document.getElementById('tutorials-maintext').innerText = "Tutoriály";
-document.getElementById('subtext-tutorials').innerText = "nejspíš to bude k ničemu, ale proč to tady nemít";
+document.getElementById('tutorials-subtext').innerText = "nejspíš to bude k ničemu, ale proč to tady nemít";
 } catch {}
