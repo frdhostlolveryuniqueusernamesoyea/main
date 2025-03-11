@@ -1,3 +1,9 @@
+// NAVBAR
+document.getElementById('homenavbar').innerText = "Home ";
+document.getElementById('pricingnavbar').innerText = "Pricing";
+document.getElementById('contactnavbar').innerText = "Contact";
+
+// HOMEPAGE
 document.getElementById('getfreesubdomain').innerText = "Get a free subdomain with (soon) full access";
 document.getElementById('getbtn').innerText = "Get";
 document.getElementById('pricinkbbtn').innerText = "Pricing";

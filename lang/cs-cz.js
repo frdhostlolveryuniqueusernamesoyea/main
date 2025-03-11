@@ -1,3 +1,9 @@
+// NAVBAR
+document.getElementById('homenavbar').innerText = "Domů ";
+document.getElementById('pricingnavbar').innerText = "Plány";
+document.getElementById('contactnavbar').innerText = "Kontakt";
+
+// HOMEPAGE
 document.getElementById('getfreesubdomain').innerText = "Získej zdarma subdoménu s (brzy) plným přístupem";
 document.getElementById('getbtn').innerText = "Získat";
 document.getElementById('pricinkbbtn').innerText = "Plány";

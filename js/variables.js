@@ -22,13 +22,13 @@ const navbar = `                <!-- Text Logo - Use this if you don't have a gr
                     <ul class="pl-0 mt-3 mb-2 ml-auto flex flex-col list-none lg:mt-0 lg:mb-0 lg:flex-row">
 
                         <li>
-                            <a class="nav-link page-scroll active" href="/#header">Home <span class="sr-only"></span></a>
+                            <a class="nav-link page-scroll active" href="/#header" id="homenavbar">Home <span class="sr-only"></span></a>
                         </li>
                         <li>
-                            <a class="nav-link page-scroll" href="/#pricing">Pricing</a>
+                            <a class="nav-link page-scroll" href="/#pricing" id="pricingnavbar">Pricing</a>
                         </li>
                         <li>
-                            <a class="nav-link page-scroll" href="/#contact">Contact</a>
+                            <a class="nav-link page-scroll" href="/#contact" id="contactnavbar">Contact</a>
                         </li>
                         <li>
                             <a class="nav-link page-scroll" href="/#statistics">Stats</a>
