@@ -1,4 +1,5 @@
 // NAVBAR
+try {
 document.getElementById('homenavbar').innerText = "Domů ";
 document.getElementById('pricingnavbar').innerText = "Ceník";
 document.getElementById('contactnavbar').innerText = "Kontakt";
@@ -11,8 +12,10 @@ document.getElementById('toolsnavbar').innerText = "Nástroje";
 document.getElementById('discordnavbar').innerText = "Připojit se na Discord";
 document.getElementById('dashnavbar').innerText = "Řídící panel";
 document.getElementById('getnavbar').innerText = "Získat";
+} catch {}
 
 // HOMEPAGE
+try {
 document.getElementById('getfreesubdomain').innerText = "Získej zdarma subdoménu s (brzy) plným přístupem";
 document.getElementById('getbtn').innerText = "Získat";
 document.getElementById('pricinkbbtn').innerText = "Ceník";
@@ -49,8 +52,11 @@ document.getElementById('server-text').innerText = "Game server hosting pro Mine
 document.getElementById('gettext').innerHTML = 'Pro získání, připoj se na náš <u><a href="/discord">Discord</a></u>, nebo nám pošli email na <u><a href="mailto:get@frdomains.site">get@frdomains.site</a></u>';
 
 document.getElementById('contacttext').innerHTML = 'FrDomains je tým tří lidí a můžeš nás kontaktovat na <a class="text-indigo-600 hover:text-gray-500" href="mailto:contact@frdomains.site">contact@frdomains.site</a>';
+} catch {}
 
 // TEAM
+try {
 document.getElementById('mrtomititle').innerText = "Zakladatel a vývojář";
 document.getElementById('kubalititle').innerText = "Zakladatel";
 document.getElementById('jpmanektitle').innerText = "Hlavní vývojář (někdy aktivní - vývojář API)";
+} catch {}

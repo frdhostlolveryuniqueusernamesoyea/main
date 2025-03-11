@@ -1,4 +1,5 @@
 // NAVBAR
+try {
 document.getElementById('homenavbar').innerText = "Home ";
 document.getElementById('pricingnavbar').innerText = "Pricing";
 document.getElementById('contactnavbar').innerText = "Contact";
@@ -11,8 +12,10 @@ document.getElementById('toolsnavbar').innerText = "Tools";
 document.getElementById('discordnavbar').innerText = "Join the Discord";
 document.getElementById('dashnavbar').innerText = "Dashboard";
 document.getElementById('getnavbar').innerText = "Get";
+} catch {}
 
 // HOMEPAGE
+try {
 document.getElementById('getfreesubdomain').innerText = "Get a free subdomain with (soon) full access";
 document.getElementById('getbtn').innerText = "Get";
 document.getElementById('pricinkbbtn').innerText = "Pricing";
@@ -49,8 +52,11 @@ document.getElementById('server-text').innerText = "Game server hosting for Mine
 document.getElementById('gettext').innerHTML = 'To get, join our <u><a href="/discord">Discord</a></u>, or email us at <u><a href="mailto:get@frdomains.site">get@frdomains.site</a></u>';
 
 document.getElementById('contacttext').innerHTML = 'FrDomains is a group of 3 friends and you can contact us at <a class="text-indigo-600 hover:text-gray-500" href="mailto:contact@frdomains.site">contact@frdomains.site</a>';
+} catch {}
 
 // TEAM
+try {
 document.getElementById('mrtomititle').innerText = "Founder and Developer";
 document.getElementById('kubalititle').innerText = "Founder";
 document.getElementById('jpmanektitle').innerText = "Head Developer (sometimes active - API developer)";
+} catch {}
