@@ -56,6 +56,8 @@ document.getElementById('contacttext').innerHTML = 'FrDomains is a group of 3 fr
 
 // TEAM
 try {
+document.getElementById('maintext-team').innerText = "Our team";
+document.getElementById('subtext-team').innerText = "below is the team behind FrDomains";
 document.getElementById('mrtomititle').innerText = "Founder and Developer";
 document.getElementById('kubalititle').innerText = "Founder";
 document.getElementById('jpmanektitle').innerText = "Head Developer (sometimes active - API developer)";

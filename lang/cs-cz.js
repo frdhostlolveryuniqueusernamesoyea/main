@@ -56,6 +56,8 @@ document.getElementById('contacttext').innerHTML = 'FrDomains je tým tří lid�
 
 // TEAM
 try {
+document.getElementById('maintext-team').innerText = "Náš tým";
+document.getElementById('subtext-team').innerText = "níže je tým FrDomains";
 document.getElementById('mrtomititle').innerText = "Zakladatel a vývojář";
 document.getElementById('kubalititle').innerText = "Zakladatel";
 document.getElementById('jpmanektitle').innerText = "Hlavní vývojář (někdy aktivní - vývojář API)";
