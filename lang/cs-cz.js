@@ -29,3 +29,6 @@ document.getElementById('getserver').innerText = "Získat";
 document.getElementById('mothlyserver').innerText = "měsíčně";
 document.getElementById('server-subtext').innerText = "od kubaliho";
 document.getElementById('server-text').innerText = "Game server hosting pro Minecraft, bude přidáno: rust";
+
+
+document.getElementById('gettext').innerHTML = 'Pro získání, připoj se na náš <u><a href="/discord">Discord</a></u>, nebo nám pošli email na <u><a href="mailto:get@frdomains.site">get@frdomains.site</a></u>';

@@ -29,3 +29,6 @@ document.getElementById('getserver').innerText = "Get";
 document.getElementById('mothlyserver').innerText = "monthly";
 document.getElementById('server-subtext').innerText = "from kubali";
 document.getElementById('server-text').innerText = "Game server hosting for Minecraft, to be added: rust";
+
+
+document.getElementById('gettext').innerHTML = 'To get, join our <u><a href="/discord">Discord</a></u>, or email us at <u><a href="mailto:get@frdomains.site">get@frdomains.site</a></u>';
