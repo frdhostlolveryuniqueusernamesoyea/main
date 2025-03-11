@@ -1,12 +1,20 @@
 // NAVBAR
 document.getElementById('homenavbar').innerText = "Domů ";
-document.getElementById('pricingnavbar').innerText = "Plány";
+document.getElementById('pricingnavbar').innerText = "Ceník";
 document.getElementById('contactnavbar').innerText = "Kontakt";
+document.getElementById('statsnavbar').innerText = "Statistiky";
+document.getElementById('teamnavbar').innerText = "Tým";
+document.getElementById('tutorialsnavbar').innerText = "Tutoriály";
+document.getElementById('privacynavbar').innerText = "Zásady ochrany osobních údajů";
+document.getElementById('toolsnavbar').innerText = "Nástroje";
+document.getElementById('discordnavbar').innerText = "Připojit se na Discord";
+document.getElementById('dashnavbar').innerText = "Řídící panel";
+document.getElementById('getnavbar').innerText = "Získat";
 
 // HOMEPAGE
 document.getElementById('getfreesubdomain').innerText = "Získej zdarma subdoménu s (brzy) plným přístupem";
 document.getElementById('getbtn').innerText = "Získat";
-document.getElementById('pricinkbbtn').innerText = "Plány";
+document.getElementById('pricinkbbtn').innerText = "Ceník";
 
 
 document.getElementById('userslbl').innerText = "Uživatelů";
@@ -14,12 +22,12 @@ document.getElementById('subdomainsorderd').innerText = "Objednáno subdomén";
 document.getElementById('subdomainsplas').innerText = "Z toho prémiových";
 
 
-document.getElementById('pricingmaintext').innerText = "Plány";
+document.getElementById('pricingmaintext').innerText = "Ceník";
 document.getElementById('pricingsubtext').innerText = "Plas je levné že?";
+
 document.getElementById('semesterplas').innerText = "Každý semestr";
 document.getElementById('halfyearplas').innerText = "(půl roku)";
 document.getElementById('plas-subtext').innerText = "někdy také označováno jako frdomains plus nebo premium";
-
 document.getElementById('plas-text-1').innerText = "Několik E-Mail adres";
 document.getElementById('plas-text-2').innerText = "Několik subdomén";
 document.getElementById('plas-text-moredomains').innerText = "+ víc domén na výběr (zatím žádné)";

@@ -2,6 +2,14 @@
 document.getElementById('homenavbar').innerText = "Home ";
 document.getElementById('pricingnavbar').innerText = "Pricing";
 document.getElementById('contactnavbar').innerText = "Contact";
+document.getElementById('statsnavbar').innerText = "Stats";
+document.getElementById('teamnavbar').innerText = "Team";
+document.getElementById('tutorialsnavbar').innerText = "Tutorials";
+document.getElementById('privacynavbar').innerText = "Privacy Policy";
+document.getElementById('toolsnavbar').innerText = "Tools";
+document.getElementById('discordnavbar').innerText = "Join the Discord";
+document.getElementById('dashnavbar').innerText = "Dashboard";
+document.getElementById('getnavbar').innerText = "Get";
 
 // HOMEPAGE
 document.getElementById('getfreesubdomain').innerText = "Get a free subdomain with (soon) full access";

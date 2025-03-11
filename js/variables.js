@@ -14,8 +14,8 @@ const navbar = `                <!-- Text Logo - Use this if you don't have a gr
                 &nbsp;&nbsp;&nbsp;
 
                 <select style="color:black" id="langpackbox" onchange="javascript:changeLang()">
-                    <option style="color:black" value="en-us">en-us</option>
-                    <option style="color:black" value="cs-cz">cs-cz</option>
+                    <option style="color:black" value="en-us">🇺🇸 en-us</option>
+                    <option style="color:black" value="cs-cz">🇨🇿 cs-cz</option>
                 </select>
 
                 <div class="navbar-collapse offcanvas-collapse lg:flex lg:flex-grow lg:items-center" id="navbarsExampleDefault">
@@ -31,34 +31,34 @@ const navbar = `                <!-- Text Logo - Use this if you don't have a gr
                             <a class="nav-link page-scroll" href="/#contact" id="contactnavbar">Contact</a>
                         </li>
                         <li>
-                            <a class="nav-link page-scroll" href="/#statistics">Stats</a>
+                            <a class="nav-link page-scroll" href="/#statistics" id="statsnavbar">Stats</a>
                         </li>
                         <li class="dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop&nbsp;</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
-                            <a class="nav-link page-scroll dropdown-item" href="/team">Team</a>
+                            <a class="nav-link page-scroll dropdown-item" href="/team" id="teamnavbar">Team</a>
                         <div class="dropdown-divider"></div>
-                            <a class="nav-link page-scroll dropdown-item" href="/tutorials">Tutorials</a>
+                            <a class="nav-link page-scroll dropdown-item" href="/tutorials" id="tutorialsnavbar">Tutorials</a>
                         <div class="dropdown-divider"></div>
-                            <a class="nav-link page-scroll dropdown-item" href="/privacy">Privacy Policy</a>
+                            <a class="nav-link page-scroll dropdown-item" href="/privacy" id="privacynavbar">Privacy Policy</a>
                         <div class="dropdown-divider"></div>
-                            <a class="nav-link page-scroll dropdown-item" href="/tools">Tools</a>
+                            <a class="nav-link page-scroll dropdown-item" href="/tools" id="toolsnavbar">Tools</a>
                             <!-- a class="nav-link page-scroll dropdown-item" href="/whatis">WhatIs (ALPHA)</a -->
                         <!-- div class="dropdown-divider"></div-->
                         </div>
                         
                         <li>
-                            <a class="nav-link page-scroll" href="/discord">Join the Discord</a>
+                            <a class="nav-link page-scroll" href="/discord" id="discordnavbar">Join the Discord</a>
                         </li>
                         &nbsp;
                         &nbsp;
                         <li>
-                            <a class="dashb-nav-link" href="https://dash.frdomains.site">Dashboard</a>
+                            <a class="dashb-nav-link" href="https://dash.frdomains.site" id="dashnavbar">Dashboard</a>
                         </li>
                         &nbsp;
                         &nbsp;
                         <li>
-                            <a class="get-nav-link page-scroll" href="/#get">Get</a>
+                            <a class="get-nav-link page-scroll" href="/#get" id="getnavbar">Get</a>
                         </li>
 
                         <!-- iframe src="/navbar"></iframe -->
