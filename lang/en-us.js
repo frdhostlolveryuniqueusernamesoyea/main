@@ -24,3 +24,8 @@ document.getElementById('lifetimestandard').innerText = "lifetime";
 document.getElementById('standard-subtext').innerText = "frdomains free - pretty much everything thats in plas but a little less";
 document.getElementById('standard-text-1').innerText = "Multiple email addresses";
 document.getElementById('standard-text-2').innerText = "Multiple subdomains";
+
+document.getElementById('getserver').innerText = "Get";
+document.getElementById('mothlyserver').innerText = "monthly";
+document.getElementById('server-subtext').innerText = "from kubali";
+document.getElementById('server-text').innerText = "Game server hosting for Minecraft, to be added: rust";

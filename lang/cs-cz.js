@@ -24,3 +24,8 @@ document.getElementById('lifetimestandard').innerText = "nadoživotí";
 document.getElementById('standard-subtext').innerText = "frdomains zadara verze - asi všechno co je v plas ale trochu méně";
 document.getElementById('standard-text-1').innerText = "Několik E-Mail adres";
 document.getElementById('standard-text-2').innerText = "Několik subdomén";
+
+document.getElementById('getserver').innerText = "Získat";
+document.getElementById('mothlyserver').innerText = "měsíčně";
+document.getElementById('server-subtext').innerText = "od kubaliho";
+document.getElementById('server-text').innerText = "Game server hosting pro Minecraft, bude přidáno: rust";
