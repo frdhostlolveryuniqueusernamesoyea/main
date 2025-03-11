@@ -34,7 +34,7 @@ const navbar = `                <!-- Text Logo - Use this if you don't have a gr
                             <a class="nav-link page-scroll" href="/#statistics" id="statsnavbar">Stats</a>
                         </li>
                         <li class="dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop&nbsp;</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop </a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
                             <a class="nav-link page-scroll dropdown-item" href="/team" id="teamnavbar">Team</a>
                         <div class="dropdown-divider"></div>

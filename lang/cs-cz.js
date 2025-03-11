@@ -3,6 +3,7 @@ document.getElementById('homenavbar').innerText = "Domů ";
 document.getElementById('pricingnavbar').innerText = "Ceník";
 document.getElementById('contactnavbar').innerText = "Kontakt";
 document.getElementById('statsnavbar').innerText = "Statistiky";
+document.getElementById('dropdown01').innerText = "Rozbalit ";
 document.getElementById('teamnavbar').innerText = "Tým";
 document.getElementById('tutorialsnavbar').innerText = "Tutoriály";
 document.getElementById('privacynavbar').innerText = "Zásady ochrany osobních údajů";

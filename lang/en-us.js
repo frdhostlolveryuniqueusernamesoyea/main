@@ -3,6 +3,7 @@ document.getElementById('homenavbar').innerText = "Home ";
 document.getElementById('pricingnavbar').innerText = "Pricing";
 document.getElementById('contactnavbar').innerText = "Contact";
 document.getElementById('statsnavbar').innerText = "Stats";
+document.getElementById('dropdown01').innerText = "Drop ";
 document.getElementById('teamnavbar').innerText = "Team";
 document.getElementById('tutorialsnavbar').innerText = "Tutorials";
 document.getElementById('privacynavbar').innerText = "Privacy Policy";
