@@ -69,4 +69,7 @@ document.getElementById('filiptitle').innerText = "Vývojář (neaktivní)";
 try {
 document.getElementById('tutorials-maintext').innerText = "Tutoriály";
 document.getElementById('tutorials-subtext').innerText = "nejspíš to bude k ničemu, ale proč to tady nemít";
+
+document.getElementById('debian-install').innerText = "Instalace Debianu 12";
+document.getElementById('casaos-install').innerText = "Instalace CasaOS";
 } catch {}

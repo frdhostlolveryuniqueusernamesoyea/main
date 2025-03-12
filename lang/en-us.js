@@ -69,4 +69,7 @@ document.getElementById('filiptitle').innerText = "Developer (inactive)";
 try {
 document.getElementById('tutorials-maintext').innerText = "Tutorials";
 document.getElementById('tutorials-subtext').innerText = "it will probably never be used, but why not have it here";
+
+document.getElementById('debian-install').innerText = "Debianu 12 Installation";
+document.getElementById('casaos-install').innerText = "CasaOS Installation";
 } catch {}
