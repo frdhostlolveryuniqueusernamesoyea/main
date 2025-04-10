@@ -76,6 +76,6 @@ document.getElementById('casaos-install').innerText = "CasaOS Installation";
 
 // PRIVACY POLICY
 try {
-    document.getElementById('privacy-maintext').innerText = "Privacy Policy";
+    document.getElementById('privacy-maintext').innerText = "Our Privacy Policy";
     document.getElementById('privacy-subtext').innerHTML = `it's not small anymore, <i>but you can read "<strong>In short:</strong>"</i>`;
 } catch {}

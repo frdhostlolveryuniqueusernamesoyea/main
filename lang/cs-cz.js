@@ -76,7 +76,7 @@ document.getElementById('casaos-install').innerText = "Instalace CasaOS";
 
 // PRIVACY POLICY
 try {
-    document.getElementById('privacy-maintext').innerText = "Zásady ochrany osobních údajů";
+    document.getElementById('privacy-maintext').innerText = "Naše zásady ochrany osobních údajů";
     document.getElementById('privacy-subtext').innerHTML = `
         už není malé, <i>ale můžete si přečíst "<strong>In short:</strong>"</i>
         !! PROZATÍM NEBUDE PŘELOŽENO DO ČEŠTINY !!
