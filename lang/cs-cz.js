@@ -73,3 +73,12 @@ document.getElementById('tutorials-subtext').innerText = "nejspíš to bude k ni
 document.getElementById('debian-install').innerText = "Instalace Debianu 12";
 document.getElementById('casaos-install').innerText = "Instalace CasaOS";
 } catch {}
+
+// PRIVACY POLICY
+try {
+    document.getElementById('privacy-maintext').innerText = "Zásady ochrany osobních údajů";
+    document.getElementById('privacy-subtext').innerHTML = `
+        už není malé, <i>ale můžete si přečíst "<strong>In short:</strong>"</i>
+        !! PROZATÍM NEBUDE PŘELOŽENO DO ČEŠTINY !!
+    `;
+} catch {}

@@ -73,3 +73,9 @@ document.getElementById('tutorials-subtext').innerText = "it will probably never
 document.getElementById('debian-install').innerText = "Debian 12 Installation";
 document.getElementById('casaos-install').innerText = "CasaOS Installation";
 } catch {}
+
+// PRIVACY POLICY
+try {
+    document.getElementById('privacy-maintext').innerText = "Privacy Policy";
+    document.getElementById('privacy-subtext').innerHTML = `it's not small anymore, <i>but you can read "<strong>In short:</strong>"</i>`;
+} catch {}
