@@ -80,6 +80,6 @@ try {
     document.getElementById('privacy-subtext').innerHTML = `
         už není malé, <i>ale můžete si přečíst "<strong>In short:</strong>"</i>
         <br>
-        !! PROZATÍM NEBUDE PŘEKLÁDÁNO DO ČEŠTINY !!
+        <strong>!! PROZATÍM NEBUDE PŘEKLÁDÁNO DO ČEŠTINY !!</strong>
     `;
 } catch {}
