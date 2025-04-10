@@ -19,7 +19,7 @@ if (sysLang.toLowerCase() === "cs") {
     loadLang("cs-cz");
     setLang("cs-cz");
 } else {
-    
+    loadLang("en-us");
 }
 
 function changeLang() {

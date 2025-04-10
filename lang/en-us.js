@@ -60,7 +60,7 @@ document.getElementById('maintext-team').innerText = "Our team";
 document.getElementById('subtext-team').innerText = "below is the team behind FrDomains";
 document.getElementById('mrtomititle').innerText = "Founder and Developer";
 document.getElementById('kubalititle').innerText = "Founder";
-document.getElementById('jpmanektitle').innerText = "Head Developer (sometimes active - API developer)";
+document.getElementById('jpmanektitle').innerText = "Head Developer (inactive - API developer)";
 document.getElementById('kotaktitle').innerText = "Developer (sometimes active)";
 document.getElementById('filiptitle').innerText = "Developer (inactive)";
 } catch {}
@@ -70,6 +70,6 @@ try {
 document.getElementById('tutorials-maintext').innerText = "Tutorials";
 document.getElementById('tutorials-subtext').innerText = "it will probably never be used, but why not have it here";
 
-document.getElementById('debian-install').innerText = "Debianu 12 Installation";
+document.getElementById('debian-install').innerText = "Debian 12 Installation";
 document.getElementById('casaos-install').innerText = "CasaOS Installation";
 } catch {}
