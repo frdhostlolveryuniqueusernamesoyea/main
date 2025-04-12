@@ -20,6 +20,7 @@ document.getElementById('getfreesubdomain').innerText = "Získej zdarma subdomé
 document.getElementById('getbtn').innerText = "Získat";
 document.getElementById('pricinkbbtn').innerText = "Ceník";
 
+document.getElementById('whyfrd-free').innerText = "Zdarma (většina funkcí (protože nikdo nekupuje plas 😭))";
 
 document.getElementById('userslbl').innerText = "Uživatelů";
 document.getElementById('subdomainsorderd').innerText = "Objednáno subdomén";

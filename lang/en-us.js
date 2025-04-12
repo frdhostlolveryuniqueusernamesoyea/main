@@ -20,6 +20,7 @@ document.getElementById('getfreesubdomain').innerText = "Get a free subdomain wi
 document.getElementById('getbtn').innerText = "Get";
 document.getElementById('pricinkbbtn').innerText = "Pricing";
 
+document.getElementById('whyfrd-free').innerText = "Free (most of the features (because no one's buying plas 😭))";
 
 document.getElementById('userslbl').innerText = "Users";
 document.getElementById('subdomainsorderd').innerText = "Subdomains ordered";
