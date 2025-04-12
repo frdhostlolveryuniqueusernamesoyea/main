@@ -1729,6 +1729,10 @@ a:hover.back-to-top {
     -ms-user-select: none;
      /* Internet Explorer/Edge */
     user-select: none;
-     /* Non-prefixed version, currently
-                                      supported by Chrome, Edge, Opera and Firefox */
+     /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+  }
+
+
+  .dotlist {
+    list-style-type: circle;
   }
