@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ad Slider</title>
+  <title>Fixed Ad Slider</title>
   <style>
     * {
       box-sizing: border-box;
@@ -12,66 +12,54 @@
     }
 
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f4f4f4;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f0f0;
     }
 
     .slider {
-      position: relative;
       width: 100%;
       max-width: 800px;
       height: 300px;
       margin: 50px auto;
       overflow: hidden;
-      border-radius: 15px;
+      position: relative;
+      border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
 
-    .slides-wrapper {
+    .slides {
       display: flex;
-      width: 300%; /* 100% for each slide * 3 slides */
       height: 100%;
       transition: transform 0.6s ease-in-out;
     }
 
     .slide {
-      width: 100%; /* Make each slide exactly the width of the slider */
-      height: 100%;
       flex: 0 0 100%;
+      width: 100%;
+      height: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
       color: white;
-    }
-
-    .slide h2 {
-      font-size: 2.5rem;
-      line-height: 1.2;
-      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+      font-size: 2.2rem;
+      font-weight: bold;
       padding: 20px;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
     }
 
-    .slide1 {
-      background: linear-gradient(135deg, #1a237e, #3949ab);
-    }
-
-    .slide2 {
-      background: linear-gradient(135deg, #b71c1c, #f44336);
-    }
-
-    .slide3 {
-      background: linear-gradient(135deg, #00695c, #26a69a);
-    }
+    .slide1 { background: linear-gradient(135deg, #1a237e, #3949ab); }
+    .slide2 { background: linear-gradient(135deg, #c62828, #ef5350); }
+    .slide3 { background: linear-gradient(135deg, #00695c, #26a69a); }
   </style>
 </head>
 <body>
 
 <div class="slider">
-  <div class="slides-wrapper" id="slides">
-    <div class="slide slide1"><h2>🚀 Welcome to Our Site</h2></div>
-    <div class="slide slide2"><h2>🔥 Explore Our New Features</h2></div>
-    <div class="slide slide3"><h2>💬 Let's Work Together!</h2></div>
+  <div class="slides" id="slides">
+    <div class="slide slide1">🚀 Welcome to Our Site</div>
+    <div class="slide slide2">✨ Explore New Features</div>
+    <div class="slide slide3">🤝 Let's Work Together</div>
   </div>
 </div>
 
