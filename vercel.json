@@ -22,6 +22,7 @@
     { "src": "/mvc", "status": 200, "dest": "/pages/movecursor.html" },
     { "src": "/apiworkdow", "status": 200, "dest": "/pages/apiworkdow.html" },
     { "src": "/home", "status": 200, "dest": "/index.html" },
+    { "src": "/ad", "status": 200, "dest": "/pages/ad.html" },
     { "src": "/(.*)", "status": 404, "dest": "/pages/404.html" }
   ]
 }
