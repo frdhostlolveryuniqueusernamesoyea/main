@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Fixed Ad Slider</title>
+  <title>Fullscreen Tab Slider</title>
   <style>
     * {
       box-sizing: border-box;
@@ -11,20 +11,17 @@
       padding: 0;
     }
 
-    body {
+    html, body {
+      height: 100%;
       font-family: 'Segoe UI', sans-serif;
-      background: #f0f0f0;
+      background: #000;
     }
 
     .slider {
-      /*width: 100%;
-      max-width: 800px;
-      height: 300px;*/
-      margin: 50px auto;
+      width: 100vw;
+      height: 100vh;
       overflow: hidden;
       position: relative;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
 
     .slides {
@@ -42,7 +39,7 @@
       justify-content: center;
       text-align: center;
       color: white;
-      font-size: 2.2rem;
+      font-size: 3rem;
       font-weight: bold;
       padding: 20px;
       text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
