@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <style>
+        body {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <audio id="myAudio" src="/files/moaning.mp3"></audio>
+</body>
+<script>
+    document.addEventListener("click", () => {
+        const audio = document.getElementById("myAudio");
+        audio.play().catch(error => console.error("Autoplay blocked:", error));
+    }); // Runs only on first click
+
+    // Get the audio element
+    const audio = document.getElementById('myAudio');
+
+    // Function to play the audio
+    function playAudio() {
+        audio.play();
+    }
+
+    // Function to pause the audio
+    function pauseAudio() {
+        audio.pause();
+    }
+
+</script>
+</html>
