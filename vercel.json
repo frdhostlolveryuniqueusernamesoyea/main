@@ -25,7 +25,7 @@
     { "src": "/ad", "status": 200, "dest": "/pages/ad.html" },
     { "src": "/moan", "status": 200, "dest": "/pages/moan.html" },
     { "src": "/black", "status": 200, "dest": "/pages/black.html" },
-    { "src": "/:match*", "status": 200, "dest": "/pages/:match*.html" },
+    { "src": "/(<page>)", "status": 200, "dest": "/pages/$page .html" },
     { "src": "/(.*)", "status": 404, "dest": "/pages/404.html" }
   ]
 }
