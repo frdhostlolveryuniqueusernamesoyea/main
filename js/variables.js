@@ -7,7 +7,7 @@ const navbar = `                <!-- Text Logo - Use this if you don't have a gr
                 </a>
                 <a class="text-white-800 font-semibold text-1xl leading-4 no-underline page-scroll" href="/index.html">(features may change)</a>
 
-
+                &nbsp;&nbsp;&nbsp;
                 <select style="color:black" id="langpackbox" onchange="javascript:changeLang()">
                     <option style="color:black" value="en-us">🇺🇸 en-us</option>
                     <option style="color:black" value="cs-cz">🇨🇿 cs-cz</option>
