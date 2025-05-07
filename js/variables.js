@@ -7,16 +7,15 @@ const navbar = `                <!-- Text Logo - Use this if you don't have a gr
                 </a>
                 <a class="text-white-800 font-semibold text-1xl leading-4 no-underline page-scroll" href="/index.html">(features may change)</a>
 
-                <button class="background-transparent rounded text-xl leading-none hover:no-underline focus:no-underline lg:hidden lg:text-gray-400" type="button" data-toggle="offcanvas">
-                    <span class="navbar-toggler-icon inline-block w-8 h-8 align-middle"></span>
-                </button>
-
-                &nbsp;&nbsp;&nbsp;
 
                 <select style="color:black" id="langpackbox" onchange="javascript:changeLang()">
                     <option style="color:black" value="en-us">🇺🇸 en-us</option>
                     <option style="color:black" value="cs-cz">🇨🇿 cs-cz</option>
                 </select>
+
+                <button class="background-transparent rounded text-xl leading-none hover:no-underline focus:no-underline lg:hidden lg:text-gray-400" type="button" data-toggle="offcanvas">
+                    <span class="navbar-toggler-icon inline-block w-8 h-8 align-middle"></span>
+                </button>
 
                 <div class="navbar-collapse offcanvas-collapse lg:flex lg:flex-grow lg:items-center" id="navbarsExampleDefault">
                     <ul class="pl-0 mt-3 mb-2 ml-auto flex flex-col list-none lg:mt-0 lg:mb-0 lg:flex-row">
