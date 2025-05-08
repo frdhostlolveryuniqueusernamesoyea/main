@@ -337,7 +337,7 @@ select {
     -ms-appearance: none;
     -o-appearance: none;
     appearance: none;
-    background-image: url("../images/down-arrow.png");
+    background-image: url("/images/down-arrow.png");
     background-position: 96% 50%;
     background-repeat: no-repeat;
     outline: none;
@@ -863,7 +863,7 @@ input[type="checkbox"] {
 .cards-2 {
     position: relative;
     padding-top: 8rem;
-    background: linear-gradient(rgb(5 48 65), rgb(63 63 70)), url(../images/pricing-background.jpg) center center no-repeat;
+    background: linear-gradient(rgb(5 48 65), rgb(63 63 70)), url(/images/pricing-background.jpg) center center no-repeat;
     background-size: cover;
     text-align: center;
 }
@@ -958,7 +958,7 @@ input[type="checkbox"] {
 .basic-5 {
     padding-top: 4.5rem;
     padding-bottom: 7.5rem;
-    background: url("../images/conclusion-background.jpg") center center no-repeat;
+    background: url("/images/conclusion-background.jpg") center center no-repeat;
     background-size: cover;
     text-align: center;
 }

@@ -2,10 +2,10 @@ const navbar = `                <!-- Text Logo - Use this if you don't have a gr
                 <!-- <a class="text-gray-800 font-semibold text-3xl leading-4 no-underline page-scroll" href="index.html">Pavo</a> -->
 
                 <!-- Image Logo -->
-                <a class="inline-block mr-4 py-0.5 text-xl whitespace-nowrap hover:no-underline focus:no-underline" href="/index.html">
+                <a class="inline-block mr-4 py-0.5 text-xl whitespace-nowrap hover:no-underline focus:no-underline" href="/">
                     <img src="/favicontp.png" alt="alternative" class="h-15" width="40" height="40"/>
                 </a>
-                <a class="text-white-800 font-semibold text-1xl leading-4 no-underline page-scroll" href="/index.html">(features may change)</a>
+                <a class="text-white-800 font-semibold text-1xl leading-4 no-underline page-scroll" href="/">(features may change)</a>
 
                 &nbsp;&nbsp;&nbsp;
                 <select style="color:black" id="langpackbox" onchange="javascript:changeLang()">
