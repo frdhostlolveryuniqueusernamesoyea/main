@@ -8,7 +8,6 @@ document.getElementById('dropdown01').innerText = "Rozbalit ";
 document.getElementById('teamnavbar').innerText = "Tým";
 document.getElementById('tutorialsnavbar').innerText = "Tutoriály";
 document.getElementById('privacynavbar').innerText = "Zásady ochrany osobních údajů";
-document.getElementById('toolsnavbar').innerText = "Nástroje";
 document.getElementById('discordnavbar').innerText = "Připojit se na Discord";
 document.getElementById('dashnavbar').innerText = "Řídící panel";
 document.getElementById('getnavbar').innerText = "Získat";
