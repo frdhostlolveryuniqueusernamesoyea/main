@@ -8,7 +8,6 @@ document.getElementById('dropdown01').innerText = "Drop ";
 document.getElementById('teamnavbar').innerText = "Team";
 document.getElementById('tutorialsnavbar').innerText = "Tutorials";
 document.getElementById('privacynavbar').innerText = "Privacy Policy";
-document.getElementById('toolsnavbar').innerText = "Tools";
 document.getElementById('discordnavbar').innerText = "Join the Discord";
 document.getElementById('dashnavbar').innerText = "Dashboard";
 document.getElementById('getnavbar').innerText = "Get";
