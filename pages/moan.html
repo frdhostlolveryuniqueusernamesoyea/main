@@ -24,7 +24,7 @@
         const audio = document.getElementById("myAudio");
         audio.play().catch(error => console.error("Autoplay blocked:", error));
     });
-    document.getElementById("body").onkeydown(() => {
+    document.getElementById("body").onkeydown = () => {
         const audio = document.getElementById("myAudio");
         audio.play().catch(error => console.error("Autoplay blocked:", error));
     });
