@@ -16,14 +16,18 @@
         }
     </style>
 </head>
-<body>
+<body id="body">
     <audio id="myAudio" src="/files/moaning.mp3"></audio>
 </body>
 <script>
     document.addEventListener("click", () => {
         const audio = document.getElementById("myAudio");
         audio.play().catch(error => console.error("Autoplay blocked:", error));
-    }); // Runs only on first click
+    });
+    document.getElementById("body").onkeydown(() => {
+        const audio = document.getElementById("myAudio");
+        audio.play().catch(error => console.error("Autoplay blocked:", error));
+    });
 
     // Get the audio element
     const audio = document.getElementById('myAudio');
