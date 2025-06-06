@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Tab - FRDomains Style</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0a2540 0%, #1e3c72 100%);
+            color: #e0e6ed;
+            font-family: 'Segoe UI', 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 32px;
+            background: rgba(0,0,0,0.15);
+            border-radius: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+        }
+        .logo img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            filter: drop-shadow(0 2px 8px #0a2540aa);
+        }
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin: 0 0 12px 0;
+            letter-spacing: 1px;
+            background: linear-gradient(90deg, #3a8dde, #5f9fff 80%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .search-box {
+            margin-top: 28px;
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            justify-content: center;
+        }
+        .search-box input {
+            width: 100%;
+            padding: 14px 18px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            background: #16213a;
+            color: #e0e6ed;
+            outline: none;
+            box-shadow: 0 2px 8px rgba(30,60,114,0.15);
+            transition: background 0.2s;
+        }
+        .search-box input:focus {
+            background: #22335a;
+        }
+        .links {
+            margin-top: 40px;
+            display: flex;
+            gap: 32px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .link-tile {
+            background: rgba(30,60,114,0.7);
+            border-radius: 10px;
+            padding: 18px 28px;
+            color: #e0e6ed;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            box-shadow: 0 2px 8px rgba(10,37,64,0.18);
+            transition: background 0.2s, transform 0.2s;
+        }
+        .link-tile:hover {
+            background: #3a8dde;
+            color: #fff;
+            transform: translateY(-2px) scale(1.04);
+        }
+        @media (max-width: 600px) {
+            .links {
+                flex-direction: column;
+                gap: 18px;
+            }
+            .logo {
+                width: 80px;
+                height: 80px;
+            }
+            .logo img {
+                width: 56px;
+                height: 56px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="full_tp.png" alt="FRDomains Logo">
+    </div>
+    <h1>Welcome to your New Tab</h1>
+    <form class="search-box" action="https://duckduckgo.com/" method="GET" autocomplete="off">
+        <input type="text" name="q" placeholder="Search the web..." autofocus>
+    </form>
+    <div class="links">
+        <a class="link-tile" href="https://frdomains.xyz/" target="_blank">FRDomains Home</a>
+        <a class="link-tile" href="https://github.com/frdomains" target="_blank">GitHub</a>
+        <a class="link-tile" href="https://mail.google.com/" target="_blank">Gmail</a>
+        <a class="link-tile" href="https://calendar.google.com/" target="_blank">Calendar</a>
+    </div>
+</body>
+</html>

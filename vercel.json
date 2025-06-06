@@ -28,6 +28,7 @@
     { "src": "/solana/metadata.json", "status": 200, "dest": "/pages/solana.json" },
     { "src": "/rsits", "status": 200, "dest": "/pages/rsits.html" },
     { "src": "/ue", "status": 200, "dest": "/pages/urlencoder.html" },
+    { "src": "/newtab", "status": 200, "dest": "/pages/newtab.html" },
     { "src": "/(.*)", "status": 404, "dest": "/pages/404.html" }
   ]
 }
