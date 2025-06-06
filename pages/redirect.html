@@ -12,7 +12,9 @@
 
         const target = getQueryParam('q');
         if (target) {
+            if (target.startsWith("https://") || target.startsWith("http://"))
             window.location.href = target;
+            else window.location.href = "https://"+target;
         } else {
             document.addEventListener('DOMContentLoaded', function() {
                 document.body.textContent = "No redirect target specified.";
