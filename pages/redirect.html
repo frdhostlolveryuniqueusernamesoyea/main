@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Loading...</title>
+    <script>
+        // Get the value of 'q' from the URL query string
+        function getQueryParam(name) {
+            const params = new URLSearchParams(window.location.search);
+            return params.get(name);
+        }
+
+        const target = getQueryParam('q');
+        if (target) {
+            window.location.href = target;
+        } else {
+            document.addEventListener('DOMContentLoaded', function() {
+                document.body.textContent = "No redirect target specified.";
+            });
+        }
+    </script>
+</head>
+<body>
+    Loading...
+</body>
+</html>
