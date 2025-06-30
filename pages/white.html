@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Screen</title>
+
+    <style>
+        * {
+            background-color: #fff;
+            cursor: none;
+        }
+    </style>
+</head>
+<body>
+
+</body>
+<script>
+    document.addEventListener("click", () => {
+        var elem = document.documentElement;
+
+        if (elem.requestFullscreen) {
+             elem.requestFullscreen();
+         } else if (elem.webkitRequestFullscreen) { /* Safari */
+             elem.webkitRequestFullscreen();
+         } else if (elem.msRequestFullscreen) { /* IE11 */
+             elem.msRequestFullscreen();
+        }
+    });
+</script>
+</html>
