@@ -83,3 +83,14 @@ const navbar = `                <!-- Text Logo - Use this if you don't have a gr
 document.getElementById('navbrae').innerHTML = navbar;
 
 document.getElementById('copyright').innerText = '© 2025 FrDomains. All rights reserved.'
+
+//Start of Tawk.to Script
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/686ab8f7a86aec190ca6acd6/1ivggtfvu';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
