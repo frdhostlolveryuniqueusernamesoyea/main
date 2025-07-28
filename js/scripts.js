@@ -194,7 +194,7 @@
 const params = new URLSearchParams(window.location.search);
 const from = params.get("from"); // will be "dotsite" if present
 if (from === "dotsite") {
-	alert("You have been redirected from frdomains.site, which is no longer our main domain. This domain will continue to work until August 15 2026, but we strongly encourage you to change your bookmarks NOW.\n\nByli jste přesměrováni z frdomains.site, což již není naše primární doména. Tato doména bude fungovat do 15. srpna 2026, ale silně vám doporučujeme aby jste si změnili záložky HNED.");
+	alert("You have been redirected from frdomains.site, which is no longer our main domain. This domain will continue to work until August 15 2026, but we strongly encourage you to change your bookmarks NOW. As for customer subdomains, there will be a switch later this year, please check the Discord server or WhatsApp channel for an announcement when that happens.\n\nByli jste přesměrováni z frdomains.site, což již není naše primární doména. Tato doména bude fungovat do 15. srpna 2026, ale silně vám doporučujeme aby jste si změnili záložky HNED. Pro subdomény zákazníků, bude zde přesun později tento rok. Sledujte Discord server nebo WhatsApp kanál, kde včas zveřejníme příslušné oznámení.");
 }
 if (window.location.hostname === "frdomains.site") {
     const newHost = "frdomains.eu";
