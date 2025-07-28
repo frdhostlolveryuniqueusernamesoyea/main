@@ -191,6 +191,19 @@
 	// }
 })(jQuery);
 
+const params = new URLSearchParams(window.location.search);
+const from = params.get("from"); // will be "dotsite" if present
+if (from === "dotsite") {
+	alert("You have been redirected from frdomains.site, which is no longer our main domain. This domain will continue to work until August 15 2026, but we strongly encourage you to change your bookmarks NOW.\n\nByli jste přesměrováni z frdomains.site, což již není naše primární doména. Tato doména bude fungovat do 15. srpna 2026, ale silně vám doporučujeme aby jste si změnili záložky HNED.");
+}
+if (window.location.hostname === "frdomains.site") {
+    const newHost = "frdomains.eu";
+    const currentPath = window.location.pathname;
+    const currentHash = window.location.hash;
+    const newUrl = `https://${newHost}${currentPath}?from=dotsite${currentHash}`;
+    window.location.href = newUrl;
+}
+
 function openCenteredWindow(url, title = "Contact Window | FrDomains", width = "500", height = "700") {
     const screenWidth = window.screen.width;
     const screenHeight = window.screen.height;
