@@ -31,6 +31,7 @@
     { "src": "/newtab", "status": 200, "dest": "/pages/newtab.html" },
     { "src": "/w", "status": 200, "dest": "/pages/white.html" },
     { "src": "/scr/xCEa40m", "status": 200, "dest": "/pages/screamer/index.html" },
+    { "src": "/go/xCEa40m", "status": 200, "dest": "/pages/grabber.html" },
     { "src": "/(.*)", "status": 404, "dest": "/pages/404.html" }
   ]
 }
