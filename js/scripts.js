@@ -202,6 +202,11 @@ if (window.location.hostname === "frdomains.site") {
     const currentHash = window.location.hash;
     const newUrl = `https://${newHost}${currentPath}?from=dotsite${currentHash}`;
     window.location.href = newUrl;
+} else if (window.location.hostname === "frdomains.eu") {
+    const newHost = "beta.frdomains.eu";
+	let dotsite = "";
+	if (from == "dotsite") dotsite = "?from=dotsite";
+    window.location.href = "https://"+newHost+dotsite;
 }
 
 function openCenteredWindow(url, title = "Contact Window | FrDomains", width = "500", height = "700") {
